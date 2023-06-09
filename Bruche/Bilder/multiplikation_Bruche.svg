@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="461.502" height="134" viewBox="0 0 461.502 134">
+  <g id="Gruppe_1" data-name="Gruppe 1" transform="translate(-59.5 -97.5)">
+    <g id="Rechteck_1" data-name="Rechteck 1" transform="translate(61 98)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="205" height="72" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="204" height="71" rx="14.5" fill="none"/>
+    </g>
+    <g id="Rechteck_2" data-name="Rechteck 2" transform="translate(316 98)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="205" height="72" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="204" height="71" rx="14.5" fill="none"/>
+    </g>
+    <line id="Linie_2" data-name="Linie 2" y2="72.5" transform="translate(442.5 97.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rechteck_3" data-name="Rechteck 3" transform="translate(442 98)" fill="#942020" stroke="#707070" stroke-width="1">
+      <rect width="79" height="72" rx="4" stroke="none"/>
+      <rect x="0.5" y="0.5" width="78" height="71" rx="3.5" fill="none"/>
+    </g>
+    <g id="Rechteck_4" data-name="Rechteck 4" transform="translate(187 98)" fill="#942020" stroke="#707070" stroke-width="1">
+      <rect width="79" height="72" rx="11" stroke="none"/>
+      <rect x="0.5" y="0.5" width="78" height="71" rx="10.5" fill="none"/>
+    </g>
+    <line id="Linie_4" data-name="Linie 4" y1="1" x2="204.5" transform="translate(316.5 144.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_5" data-name="Linie 5" y1="1" x2="204.5" transform="translate(316.5 122.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="_1" data-name="1" transform="translate(69 194)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1</tspan></text>
+    <text id="_1-2" data-name="1" transform="translate(320 195.5)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1</tspan></text>
+    <text id="_1-3" data-name="1" transform="translate(399 195.5)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1</tspan></text>
+    <text id="_1-4" data-name="1" transform="translate(491 194)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1</tspan></text>
+    <text id="_2" data-name="2" transform="translate(69 225)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2</tspan></text>
+    <text id="_3" data-name="3" transform="translate(320 226.5)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3</tspan></text>
+    <text id="_2-2" data-name="2" transform="translate(399 226.5)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2</tspan></text>
+    <text id="_6" data-name="6" transform="translate(491 225)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6</tspan></text>
+    <line id="Linie_6" data-name="Linie 6" x2="30" transform="translate(59.5 202.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_10" data-name="Linie 10" x2="30" transform="translate(310.5 204)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_8" data-name="Linie 8" x2="30" transform="translate(389.5 204)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_9" data-name="Linie 9" x2="30" transform="translate(481.5 202.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="von" transform="translate(350 207)" fill="#707070" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">von</tspan></text>
+    <text id="sind" transform="translate(435 207)" fill="#707070" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">sind</tspan></text>
+  </g>
+</svg>

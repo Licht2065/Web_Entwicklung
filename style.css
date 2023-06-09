@@ -1,0 +1,3503 @@
+@font-face {
+  font-family: "font_1";
+  src: url("font/ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "font_2";
+  src: url("font/Popin/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "font_3";
+  src: url("font/khand/Khand-Light.ttf");
+}
+@keyframes move_border {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes move_liste {
+  from {
+    right: 0px;
+    width: 50%;
+  }
+  to {
+    right: 35px;
+    width: 90%;
+  }
+}
+@keyframes move_border_aside {
+  0% {
+    width: 5%;
+    border-color: rgba(165, 42, 42, 0.567);
+  }
+  20% {
+    width: 15%;
+    border-color: rgba(165, 42, 42, 0.683);
+  }
+  40% {
+    width: 30%;
+    border-color: rgba(165, 42, 42, 0.783);
+  }
+  60% {
+    width: 45%;
+    border-color: rgba(165, 42, 42, 0.721);
+  }
+  80% {
+    width: 75%;
+    border-color: rgba(165, 42, 42, 0.845);
+  }
+  100% {
+    width: 79%;
+    border-color: brown;
+  }
+}
+
+* {
+  margin: 0px;
+}
+
+#body_main_45 {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "section"
+    "footer";
+  grid-row-gap: 10px;
+  background: #c1b7c1;
+}
+/*----------------------------------------------------------------- Header-----------------------------------------------------------------*/
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 10px;
+  background-color: rgba(141, 141, 251);
+  position: fixed;
+  height: 50px;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  grid-area: nav;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  display: none;
+  z-index: 2;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(141, 141, 251, 0.858);
+  transition: 0.6s;
+}
+
+.menu p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid rgb(197, 105, 105);
+  border-radius: 5px;
+  transition: 0.9s;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: rgb(197, 105, 105);
+}
+#home_1452 {
+  margin-top: 5px;
+}
+.menu a {
+  color: white;
+  align-self: center;
+  width: 80%;
+}
+.menu p:hover {
+  transform: translateY(5px);
+}
+.toogle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-right: 15px;
+  width: 10%;
+  margin-left: 80%;
+}
+
+.toogle span {
+  align-self: flex-start;
+  margin-bottom: 2px;
+  height: 5px;
+  width: 40px;
+  background-color: black;
+  border: 2px solid black;
+}
+
+#logo {
+  height: 35px;
+  width: 100%;
+}
+/*--------------------------------------------- section ----------------------------------------------------------------*/
+#section_main article h1,
+#section_main aside h1 {
+  font-size: 1.4em;
+  font-weight: bolder;
+  font-family: "font_1";
+  margin: 5px;
+  padding-left: 10px;
+
+}
+#section_main article p,
+#section_main aside p {
+  font-family: "font_2";
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+#section_main p > b {
+  font-weight: bolder;
+  font-style: italic;
+}
+#section_main p > em {
+  font-size: 2em;
+  font-style: oblique;
+  color: brown;
+}
+
+#section_main {
+  grid-area: section;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.next_prev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.next_prev span {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: rgb(225, 190, 190);
+  border-radius: 100px;
+}
+.next_prev:first-child {
+  background-color: rgb(205, 66, 66);
+}
+.first_Bild{
+  width: 	95% ;
+  margin-left: 10px;
+}
+.second_Bild,
+.secondtext {
+  display: none;
+}
+#section_main img {
+  height: 300px;
+  width: 100%;
+}
+.name {
+  font-weight: bold;
+  font-size: 25px;
+}
+.text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+#discover {
+  display: flex;
+  background: center url("Bilder/Bilder_Arbeit/welcome.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  justify-content: flex-end;
+}
+#discover a {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2em;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 60%;
+  text-align: center;
+  margin: auto 0px;
+  margin-right: 10px;
+}
+
+#bild_premium {
+  background: url("Bilder/Premium/bluetooth-headset-gdfab44e56_1920.jpg");
+  display: flex;
+  background-size: 100% 250px;
+  height: 200px;
+  width: 95%;
+  margin-left: 10px;
+  border-radius: 20px;
+  justify-content: center;
+  align-self: center;
+  
+}
+#bild_premium a {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2em;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 60%;
+  text-align: center;
+  margin: auto 0px;
+}
+/*--------------------------------------------- footer----------------------------------------------------------------*/
+footer {
+  grid-area: footer;
+}
+/*------------------------------------------------------- Contact Us -----------------------------------------------*/
+#section_form {
+  margin-top: 60px;
+}
+#forme_23 {
+  display: flex;
+  flex-direction: column;
+}
+#forme_23 h1 {
+  font-size: 1.6em;
+  font-family: "font_1";
+  text-align: center;
+  margin: 10px;
+}
+#forme_23 input,
+#forme_23 textarea {
+  border: none;
+  border-radius: 0px;
+  background: rgb(235, 235, 235);
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: justify;
+  align-self: center;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+#forme_23 input ~ div {
+  margin-top: -20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+  width: 79%;
+
+  align-self: center;
+  animation: move_border_aside 5s infinite;
+  animation-timing-function: linear;
+}
+#forme_23 input[name="name"]:focus ~ #div_123,
+#forme_23 input[name="vorname"]:focus ~ #div_135,
+#forme_23 input[name="email"]:focus ~ #div_183 {
+  animation: stop;
+  border-color: rgb(248, 177, 177);
+}
+#forme_23 textarea {
+  padding: 10px;
+}
+#forme_23 input[type="submit"] {
+  width: 50%;
+  text-align: center;
+  font-size: 1.6em;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px;
+  background: #ed934f;
+  transition: 0.9s;
+}
+#forme_23 input[type="submit"]:active {
+  transform: translateY(10px);
+  background-color: #e7ae85;
+}
+#Fug_papier {
+  display: none;
+}
+/*------------------------------------------ CSS Arbeitmöglichkeit ---------------------------------------------------------------*/
+#arbeitmglich {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+#arbeit_titel {
+  margin: 10px;
+  text-align: center;
+  border-bottom: 2px dashed black;
+  font-size: 2em;
+  font-family: "font_1";
+}
+#arbeitmglich img {
+  width: 95%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.forme_ {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.forme_ input {
+  border: none;
+  border-radius: 0px;
+  background: white;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  width: 85%;
+  text-align: justify;
+  outline: none;
+  align-self: center;
+  padding: 2px;
+  border-bottom: 2px solid black;
+  font-style: italic;
+  transition: 0.9s;
+}
+.forme_ input:hover {
+  padding: 5px;
+}
+.info_per {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: 85%;
+}
+.info_per input[name="strasse"],
+.info_per input[name="stadt"] {
+  width: 100%;
+}
+.info_per input[name="plz"],
+.info_per input[name="hausnummer"] {
+  width: 30%;
+}
+.info_per input[name="strasse"] {
+  margin-right: 10px;
+}
+.info_per input[name="plz"] {
+  margin-right: 10px;
+}
+.forme_ h2 {
+  text-align: justify;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-family: "font_2";
+  font-size: 1.2em;
+}
+#anderes {
+  width: 60%;
+  display: none;
+}
+.bildung_Fach {
+  margin-left: 15%;
+  margin-bottom: 10px;
+}
+.bildung_Fach select {
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  padding: 5px;
+  background: #adc3d1;
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  font-weight: bolder;
+}
+.bildung_Fach label {
+  font-size: 1.2em;
+}
+#Höchste_Bildung_liste {
+  margin-bottom: 10px;
+}
+.forme_ input:focus {
+  border-color: rgb(197, 105, 105);
+}
+#arbeitmglich aside {
+  display: none;
+}
+.forme_ input[type="submit"] {
+  width: 70%;
+  margin-top: 10px;
+  border: none;
+  text-align: center;
+  font-size: 1.4em;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px;
+  background: #ed934f;
+  transition: 0.9s;
+}
+
+.forme_ input[type="submit"]:active {
+  transform: translateY(10px);
+  background-color: #e7ae85;
+}
+/*----------------------------------------- CSS Log in und Sign in ----------------------------------------*/
+
+section.Log_sign {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 5px 5px 5px grey;
+}
+section.Log_sign > img {
+  height: 50px;
+  width: 50px;
+}
+.Log_sign h1 {
+  margin-top: 10px;
+  font-size: 2.3em;
+  font-family: "font_1";
+}
+.fehler {
+  display: none;
+}
+.forme {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forme input[type="text"],
+.forme input[type="email"],
+.forme input[type="password"] {
+  padding: 5px;
+  width: 80%;
+  border: none;
+  border: 2px solid rgb(238, 235, 235);
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background: rgb(238, 235, 235);
+  font-size: 1.2em;
+  outline: none;
+  transition: 0.9s;
+  font-style: italic;
+}
+.forme input[type="text"]:focus,
+.forme input[type="email"]:focus,
+.forme input[type="password"]:focus {
+  border-color: #e7ae85;
+  padding: 10px;
+}
+
+#checkbox_remember_me {
+  width: 40px;
+}
+
+#selection {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  width: 80%;
+}
+#sdqe {
+  align-self: flex-start;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.forme button {
+  background: #e7ae85;
+  margin-top: 10px;
+  align-self: center;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  border-radius: 40px;
+  transition: 0.9s;
+}
+.forme button:active {
+  background: #ed934f;
+  transform: translateY(4px);
+}
+.forme button:disabled {
+  background: grey;
+}
+
+#erinnern {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 10px;
+}
+#erinnern ~ div {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+}
+#erinnern ~ div a {
+  color: #b397b3;
+}
+
+/*--------------------------------------------------- CSS Punkte ------------------------------------------------------------------------------------------*/
+
+#punkte_section_ {
+  display: flex;
+  flex-direction: column;
+}
+#nav_kurs {
+  width: 90%;
+  align-self: center;
+}
+
+#punkte_section_ video {
+  height: 200px;
+  width: 100%;
+}
+#nav_kurs ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+#nav_kurs ul li {
+  padding-right: 10px;
+  border-right: 2px solid black;
+}
+
+.article_start_Lekture {
+  display: flex;
+  flex-direction: column;
+}
+.article_start_Lekture a {
+  margin-top: 10px;
+  align-self: center;
+  width: 60%;
+}
+.article_start_Lekture a button {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  background: #8bc6ec;
+  transition: 0.9s;
+}
+.article_start_Lekture a button:active {
+  background: #9599e2;
+  transform: translateY(10px);
+}
+.article_start_Lekture p b {
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: bold;
+  color: #e7ae85;
+}
+.article_start_Lekture figcaption {
+  text-align: center;
+  font-family: "font_2", Courier, monospace;
+}
+.explain {
+  background: #9599e2;
+  border-radius: 20px;
+  margin: 10px;
+}
+.explain li {
+  margin-bottom: 5px;
+  font-style: oblique;
+}
+/*---------------------  CSS  Kurs---------------------------*/
+#punkte_section {
+  display: flex;
+  flex-direction: column;
+}
+#nav_plus_botton {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+#punkte_section main {
+  top: 50%;
+  position: absolute;
+  width: 35px;
+  background: #adc3d1;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 35px;
+  padding: 5px;
+  align-self: flex-start;
+  border-radius: 50px;
+  align-items: flex-end;
+  z-index: 5;
+  position: fixed;
+  background-image: linear-gradient(62deg, #8ec5fc79 0%, #e0c3fc72 100%);
+}
+#span_2 {
+  position: absolute;
+  transform: rotate(90deg);
+  right: 20px;
+}
+#span_1 {
+  left: 8px;
+}
+#punkte_section main span {
+  position: absolute;
+  border: 1px solid white;
+  background: white;
+  width: 4px;
+  height: 30px;
+  border-radius: 2px;
+  align-self: flex-end;
+  margin-left: 10px;
+}
+#aside_id_kurs {
+  position: absolute;
+  top: 20%;
+  height: 300px;
+  width: 70%;
+  background: white;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  box-shadow: 20px 20px 100px gray;
+  border-radius: 20px;
+  z-index: 1;
+  margin-right: 5px;
+  position: fixed;
+  background-image: linear-gradient(62deg, #8ec5fc79 0%, #e0c3fc72 100%);
+}
+#aside_id_kurs p::before {
+  content: "»";
+}
+#aside_id_kurs p {
+  font-size: 1.9em;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "font_1";
+}
+#aside_id_kurs div a {
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+#aside_id_kurs div div {
+  border-bottom: 2px solid black;
+  animation: move_border_aside 5s infinite;
+  animation-timing-function: linear;
+}
+#axe_und_punkte,
+#Abstand_zwischen_Punkten {
+  border-bottom: 2px solid black;
+  list-style: none;
+  font-size: 1.5em;
+  font-family: "font_1";
+  outline: none;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+#Punkte_grundlage {
+  font-size: 1.5em;
+  font-family: "font_1";
+  border-bottom: 2px solid black;
+  width: 95%;
+}
+#Punkte_grundlage ~ h2,
+#axe_und_punkte ~ article h2,
+#Abstand_zwischen_Punkten ~ article h2 {
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
+.bilder_punkte > img {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px gray;
+}
+.bilder_punkte {
+  text-align: center;
+  margin-right: 10px;
+}
+#article_punkte ~ a {
+  text-align: center;
+}
+#article_punkte ~ a button,
+.confirmatio_ant ~ a button {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 60%;
+
+  background: #8bc6ec;
+  transition: 0.9s;
+}
+#article_punkte ~ a button:active,
+.confirmatio_ant ~ a button:active {
+  background: #9599e2;
+  transform: translateY(10px);
+}
+.idd {
+  width: 95%;
+  cursor: pointer;
+  transition: 1s;
+}
+.bild_Kreis_34 {
+  width: 100%;
+  height: 200px;
+}
+.whal45,
+.ubrt1 {
+  display: flex;
+  flex-direction: row;
+}
+
+/*----------------------------  CSS Übung --------------------------------*/
+.Bild_Ubung_ver {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Bild_Ubung_ver img {
+  height: 200px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-left: 10%;
+}
+.confirmatio_ant {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.confirmatio_ant input {
+  margin: 10px;
+}
+.confirmatio_ant ~ a {
+  text-align: center;
+}
+.confirmatio_ant ~ a button:disabled {
+  background: gray;
+}
+#aricle_ubung_a h2 {
+  margin: 10px;
+}
+#Antwort_feh {
+  text-align: center;
+  border: 2px solid gray;
+  background: gray;
+  border-radius: 10px;
+  color: white;
+  display: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 10px;
+}
+/*------------------------------------- CSS Lösung ---------------------------*/
+
+#wert_note svg {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.circle_1_1 {
+  fill: white;
+}
+.circle_2_2 {
+  fill: none;
+  stroke: black;
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+.prozent_center div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prozent_center p {
+  margin-top: 10px;
+}
+.prozent_center div p {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 2.9em;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "font_3";
+}
+.prozent_center > p {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+/*-----------------------------------------------------CSS Bruche -------------------------------------------------------------------------------------*/
+.bruche {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+.barre {
+  border-bottom: 2px solid black;
+  width: 40px;
+  align-self: center;
+}
+.zaehler,
+.nenner {
+  width: 50px;
+  align-self: center;
+  text-align: center;
+}
+.bruchen {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.input_bruche {
+  width: 20%;
+}
+.details_ert {
+  margin-bottom: 20px;
+}
+.details_ert summary {
+  list-style: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  width: 70%;
+  font-size: 1.2em;
+  font-weight: lighter;
+  margin: 5px;
+  transition: 0.9s;
+}
+.details_ert[open] summary {
+  font-style: italic;
+  margin-left: 15%;
+}
+.details_ert sup {
+  font-size: 1em;
+  font-weight: bolder;
+}
+.details_ert b,
+.details_ert i {
+  font-size: 1.2em;
+  color: red;
+  font-weight: lighter;
+}
+#erkaeung_id ~ figure {
+  text-align: center;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+#erkaeung_id ~ figure img {
+  width: 60%;
+  height: 300px;
+  background: white;
+}
+#erkaeung_id ~ b {
+  font-size: 1.4em;
+  color: #e7ae85;
+  font-weight: lighter;
+}
+.Kurs_erklarung b {
+  color: #adc3d1;
+  font-size: 1.4em;
+}
+.Kurs_erklarung ~ ul {
+  border-radius: 20px;
+  margin: 10px;
+  list-style: "👉";
+  font-size: 1.2em;
+}
+.Kurs_erklarung ~ ul b {
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: lighter;
+  color: #9599e2;
+}
+#dreecke {
+  border-radius: 20px;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 2px;
+}
+#dreecke ~ figcaption {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.figure_gut {
+  list-style-type: "✍️";
+}
+.Krt_bruchen {
+  margin: 5px;
+}
+.Krt_bruchen li {
+  margin-bottom: 10px;
+  list-style: " 👉🏽 ";
+}
+#link_to {
+  font-size: 1em;
+  color: burlywood;
+}
+#link_to:hover {
+  box-shadow: 2px 2px 2px gray;
+  color: rgb(170, 138, 96);
+  border-bottom: 2px solid black;
+}
+#regel_xc,
+.regel_012 {
+  padding: 20px;
+  background: #8bc6ec;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-weight: bolder;
+  border-radius: 20px;
+}
+#foto_qwe {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#foto_qwe img {
+  background: white;
+  height: 200px;
+}
+.liste_dfg {
+  margin: 10px;
+  list-style: "🐍";
+}
+.liste_dfg li {
+  margin-bottom: 2px;
+}
+#h3_1 {
+  font-style: italic;
+  margin: 2px;
+}
+.regel_erka4 {
+  margin: 10px;
+  background: #d8e5ed;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  box-shadow: 2px 2px 2px grey;
+}
+.regel_erka4 ol {
+  margin-bottom: 10px;
+  list-style: " 👉🏽 ";
+}
+#anime {
+  border-bottom: 2px solid brown;
+  animation: move_border 5s infinite;
+  animation-timing-function: linear;
+}
+.titel_456 {
+  font-family: "font_3";
+  font-weight: bold;
+}
+.neu_45 p {
+  justify-content: center;
+}
+.idd[open] summary {
+  font-style: italic;
+}
+/*--------------------------------------------------- Css Faecher -------------------------------------------------------------------------*/
+#section_stufe45 {
+  margin-top: 50px;
+}
+#article {
+  width: 100%;
+}
+#article h1 {
+  font-size: 30px;
+  margin: 5px;
+  border-bottom: 2px dashed black;
+  text-align: center;
+  font-family: "font_1";
+}
+#article ol {
+  list-style: url("Bilder/Unterricht/arrow_right_alt_FILL0_wght200_GRAD0_opsz24.svg");
+}
+#article ol li {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  font-style: italic;
+}
+.faecher{
+ margin-left: 50px;
+}
+.faecher a {
+  width: 65%;
+}
+.faecher a p {
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: rgb(212, 112, 124);
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+  width: 80%;
+}
+.physik a p {
+  background: rgb(145, 112, 212);
+}
+
+/*--------------------------------------------------------- Ubung Canvas----------------------------------------------------------*/
+
+canvas {
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+/*--------------------------------------------------- CSS Kurs.html ------------------------------------------------------------------------------------------*/
+#Body_to_violet {
+  background-color: #f2e3ede6;
+}
+
+#Kurs_section {
+  /*background: linear-gradient(90deg, rgba(0,36,29,1) 7%, rgba(9,82,121,0.8195611008075105) 69%, rgba(0,212,255,1) 100%);*/
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#Oberstufe_ {
+  border-width: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-radius: 12px;
+  padding: 1em;
+  margin: 2em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#Mittelstufe_ {
+  border-width: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-radius: 12px;
+  padding: 1em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 4em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.Grundlagen_Mathe {
+  border: 2px black solid;
+  overflow: auto;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Grundlagen_Physik {
+  border: 2px black solid;
+  overflow: auto;
+  /*background-color:rgba(174, 49, 164, 0.467);*/
+  padding-bottom: 2em;
+  flex-direction: row;
+  width: 100%;
+}
+
+#Kurs_section img {
+  width: 260px;
+  height: 200px;
+  flex-direction: row;
+  flex-basis: auto;
+}
+
+/*.img_titeln{
+  width: 100%;
+  height: 200px;
+}*/
+
+#Kurs_section a:hover {
+  color: red;
+}
+
+/*--------------------------------------------------- CSS Gravitatonskraft.html ------------------------------------------------------------------------------------------*/
+
+.Titel {
+  color: brown;
+}
+
+#Summary_mein_kurs {
+  /*background-color:rgba(174, 49, 164, 0.467);*/
+  border-width: 5px;
+  border-style: double;
+  border-color: black;
+  border-radius: 12px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  /*padding:2em;
+    margin-bottom: 1em;*/
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 3em;
+  justify-items: center;
+}
+
+#Summary_mein_kurs a:hover {
+  color: green;
+}
+
+#Summary_mein_kurs img {
+  width: 100 px;
+  height: 200px;
+}
+
+/*--------------------------------------------------- Wer_sind_wir.html ------------------------------------------------------------------------------------------*/
+#wer_sind_wir {
+  padding: 4px;
+  background-color: rgba(174, 49, 164, 0.467);
+  width: 100%;
+}
+
+#wer_sind_wir>div{
+  margin:2px;
+  padding:2px;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+#wer_sind_wir p{
+  align-items: center;
+}
+
+#wer_sind_wir::after{
+  color:red;
+}
+
+mark {
+  background-color: #8bc6ec;
+}
+
+#wer_sind_wir img {
+  width:260px;
+  height: 200px;
+}
+
+#wer_sind_wir :first-child{
+  margin-top:5px;
+}
+
+.class_wer_sind_wir>h1{
+  font-size: 2em;
+}
+
+.class_wer_sind_wir {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 4px;
+  border-radius: 20px;
+  background-color: #B0C4DE;
+}
+#Note_789{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  width:100px;
+  padding: 10px;
+  font-size: 1.9em;
+  font-family: "font_3";
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+#button_124{
+  margin-top:  20px;
+  margin-left: 30%
+}
+
+@media all and (min-width: 500px) {
+  #body_main_45 {
+    display: grid;
+    grid-template-areas:
+      "header nav"
+      "section section"
+      "footer footer";
+  }
+
+  /*--------------------------------------------------Section -----------------------------------------------------------------*/
+  #section_main {
+    margin-top: 50px;
+    grid-area: section;
+  }
+  /*---------------------------------------------------------------- nav  --------------------------------------------------------*/
+  .toogle {
+    display: none;
+  }
+
+  header {
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    z-index: 3;
+    height: 52px;
+    box-shadow: 0px 15px 10px -15px gray;
+    grid-column: 1;
+  }
+  #logo {
+    margin-left: 10px;
+  }
+  nav {
+    background: rgba(141, 141, 251);
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    top: 0;
+
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    z-index: 2;
+    box-shadow: 0px 15px 10px -15px gray;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    background: rgba(141, 141, 251);
+  }
+  .menu p {
+    border: none;
+    border-radius: 0px;
+    align-self: center;
+    background: rgba(141, 141, 251);
+    color: black;
+  }
+  .menu p:hover {
+    transform: none;
+  }
+  .menu a:hover {
+    margin-bottom: -2px;
+    border-bottom: 2px solid black;
+    transform: none;
+  }
+  #home_1452 {
+    margin-top: 0px;
+  }
+  .menu a {
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  /*----------------------------------------------------------- CSS Punkte -----------------------------------------------------------*/
+
+  #nav_kurs {
+    grid-area: nav_d;
+  }
+  .article_start_Lekture {
+    grid-area: art;
+  }
+  #nav_kurs a:hover {
+    animation: background_color 5s linear;
+    animation-timing-function: linear;
+  }
+  .article_start_Lekture figure {
+    width: 60%;
+    align-self: center;
+  }
+  .article_start_Lekture a {
+    width: 30%;
+  }
+  .explain {
+    font-size: 1.2em;
+  }
+  .explain ~ p {
+    text-align: center;
+  }
+  .article_start_Lekture a:hover button {
+    background: #adc3d1;
+  }
+  /*----------------- CSS KURS-------------------*/
+
+  #punkte_section {
+    display: grid;
+    grid-template-areas:
+      "navigation_ navigation_"
+      "nav_aside  kurs_punkt"
+      "nav_aside  kurs_punkt"
+      "btn btn";
+    grid-column-gap: 20px;
+  }
+  #nav_kurs {
+    grid-area: navigation_;
+    width: 100%;
+  }
+  #main_id_kurs {
+    display: none;
+  }
+  #nav_kurs ul {
+    justify-content: space-around;
+  }
+  #article_punkte {
+    grid-area: kurs_punkt;
+    width: 100%;
+  }
+  #nav_plus_botton {
+    grid-area: nav_aside;
+    width: 300px;
+  }
+  #aside_id_kurs {
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 0px;
+    box-shadow: none;
+    align-self: flex-start;
+    z-index: 0;
+    background: wheat;
+  }
+  #aside_id_kurs div div {
+    animation: none;
+  }
+  #aside_id_kurs > div:hover {
+    padding: 10px;
+  }
+  #aside_id_kurs > div:hover a,
+  #aside_id_kurs > div:hover div {
+    color: white;
+    border-color: white;
+  }
+  #article_punkte ~ a {
+    grid-area: btn;
+    width: 70%;
+    text-align: center;
+    grid-column: 2;
+  }
+  #punkte_section aside div div {
+    border-bottom: 2px solid black;
+  }
+  .div12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .div12 img {
+    width: 100%;
+    height: 300px;
+  }
+  .cas {
+    display: flex;
+    flex-direction: row;
+  }
+  .cas p {
+    align-self: center;
+    margin-left: 10px;
+  }
+  .div123 {
+    margin-left: 46%;
+  }
+  /*----------------------------------- CSS Lösung--------------------------------------*/
+  #resultat_prozent {
+    top: 34%;
+  }
+
+  .multiline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /*----------------------------------------------------------- CSS Punkte -----------------------------------------------------------*/
+
+  #nav_kurs {
+    grid-area: nav_d;
+  }
+  .article_start_Lekture {
+    grid-area: art;
+  }
+  #nav_kurs a:hover {
+    animation: background_color 5s linear;
+    animation-timing-function: linear;
+  }
+  .article_start_Lekture figure {
+    width: 60%;
+    align-self: center;
+  }
+  .article_start_Lekture a {
+    width: 30%;
+  }
+  .explain {
+    font-size: 1.2em;
+  }
+  .explain ~ p {
+    text-align: center;
+  }
+  .article_start_Lekture a:hover button {
+    background: #adc3d1;
+  }
+  /*----------------- CSS KURS-------------------*/
+
+  #punkte_section {
+    display: grid;
+    grid-template-areas:
+      "navigation_ navigation_"
+      "nav_aside  kurs_punkt"
+      "nav_aside  kurs_punkt"
+      "btn btn";
+    grid-column-gap: 20px;
+  }
+  #nav_kurs {
+    grid-area: navigation_;
+    width: 100%;
+  }
+  #main_id_kurs {
+    display: none;
+  }
+  #nav_kurs ul {
+    justify-content: space-around;
+  }
+  #article_punkte {
+    grid-area: kurs_punkt;
+    width: 100%;
+  }
+  #nav_plus_botton {
+    grid-area: nav_aside;
+    width: 300px;
+  }
+  #aside_id_kurs {
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 0px;
+    box-shadow: none;
+    align-self: flex-start;
+    z-index: 0;
+    background: wheat;
+  }
+  #aside_id_kurs div div {
+    animation: none;
+  }
+  #aside_id_kurs > div:hover {
+    padding: 10px;
+  }
+  #aside_id_kurs > div:hover a,
+  #aside_id_kurs > div:hover div {
+    color: white;
+    border-color: white;
+  }
+  #article_punkte ~ a {
+    grid-area: btn;
+    width: 70%;
+    text-align: center;
+    grid-column: 2;
+  }
+  #punkte_section aside div div {
+    border-bottom: 2px solid black;
+  }
+  .div12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .div12 img {
+    width: 100%;
+    height: 300px;
+  }
+  .cas {
+    display: flex;
+    flex-direction: row;
+  }
+  .cas p {
+    align-self: center;
+    margin-left: 10px;
+  }
+  .div123 {
+    margin-left: 46%;
+  }
+  /*----------------------------------- CSS Lösung--------------------------------------*/
+  #resultat_prozent {
+    top: 34%;
+  }
+
+  .multiline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /*--------------------------------------------------Section -----------------------------------------------------------------*/
+  #section_main {
+    grid-area: section;
+
+    display: grid;
+    grid-template-areas:
+      "disco disco"
+      "uns uns"
+      "premium article_"
+      "premium article_";
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+  }
+  #premium_aside {
+    grid-area: premium;
+  }
+  #premium_aside p {
+    padding-left: 10px;
+  }
+  #zeugnis_r {
+    grid-area: article_;
+  }
+  #Zeugnis {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 98%;
+    border: 2px solid #f1f1f1;
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 2px gray;
+  }
+
+  #article_Section {
+    grid-area: uns;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #discover {
+   
+    margin-top: -10px;
+    background-size: cover;
+    grid-area: disco;
+    height: 300px;
+  }
+  #body_main_45 h1 {
+    text-align: center;
+    font-size: x-large;
+    margin: 10px 0px;
+  }
+
+  .Zeugnis_bilder img {
+    width: 100%;
+    height: 500px;
+    
+  }
+  .first_Bild{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .firstText,
+  .secondText {
+    align-self: center;
+    width: 100%;
+    margin-left: 10px;
+
+    background: #f1f1f1;
+  }
+  
+  #discover a {
+    margin: auto auto;
+    width: 40%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /*------------------------------------ footer -------------------------------------------------------------------*/
+
+  /*-------------------------------------------Css login --------------------------------------------------------*/
+  .Log_sign {
+    grid-area: section;
+  }
+  .forme {
+    justify-content: center;
+  }
+  .forme input[type="text"],
+  .forme input[type="email"],
+  .forme input[type="password"] {
+    width: 60%;
+  }
+  #selection,
+  #erinnern,
+  #erinnern ~ div {
+    width: 60%;
+  }
+  button[type="submit"] {
+    width: 150px;
+  }
+  #bild_Vortellung img {
+    width: 100%;
+    height: 500px;
+  }
+
+  /*------------------------------------------------------------------- CSS Arbeitmöglichkeit ------------------------------------------------------------------------------------*/
+  #arbeitmglich {
+    grid-area: section;
+    display: grid;
+    grid-template-areas:
+      "titel  titel"
+      "image  image"
+      "formulares  aside "
+      "formulares  aside ";
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+  }
+
+  #arbeit_titel {
+    grid-area: titel;
+  }
+  #arbeit_titel ~ img {
+    grid-area: image;
+    height: 350px;
+    border-radius: 20px;
+    width: 60%;
+    margin: 0px auto;
+  }
+  .forme_ {
+    grid-area: formulares;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px grey;
+    margin-left: 10px;
+    padding: 5px;
+  }
+  .forme_ input {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .forme_ input:hover {
+    padding: 10px;
+    border-color: #ed934f;
+  }
+  .info_per {
+    width: 90%;
+  }
+  .info_per input {
+    width: 100%;
+  }
+
+  input[name="strasse"] {
+    width: 90%;
+    margin-left: 10px;
+  }
+  input[name="hausnummer"] {
+    width: 10%;
+  }
+  input[name="plz"] {
+    width: 20%;
+    margin-left: 10px;
+  }
+  input[name="stadt"] {
+    width: 80%;
+  }
+  #arbeitmglich aside {
+    display: inline;
+    border-radius: 20px;
+    background-color: #8bc6ec;
+    background-image: linear-gradient(
+      135deg,
+      #8bc6ec 8%,
+      #9599e2 53%,
+      #e7ae85 100%
+    );
+
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: aside;
+    margin-right: 10px;
+  }
+  /*----------------------------------------------------------- Fächer ------------------------------------*/
+  #section_stufe45 {
+    grid-area: section;
+  }
+  #article {
+    display: flex;
+    flex-direction: column;
+  }
+  .faecher a:hover p {
+    box-shadow: 0px 3px 3px 3px rgb(241, 226, 226);
+    padding: 15px;
+  }
+  .faecher a:active p {
+    transform: translateY(5px);
+  }
+  .faecher a p {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: 0.9s;
+  }
+  .faecher {
+    display: inline;
+    width: 80%;
+    margin-left: 100px;
+  }
+  .faecher a {
+    width: 50%;
+  }
+  /*--------------------------------------------------- Premium Bild ----------------------------------------------------*/
+
+  #bild_premium a:hover,
+  #discover a:hover {
+    background: #e7ae85;
+    transition: 0.6s;
+  }
+  #bild_premium a:active,
+  #discover a:active {
+    background: #e7ae85;
+    transform: translateY(10px);
+  }
+  /*----------------------------------------------------------- Footer --------------------------------------------------*/
+  footer {
+    grid-area: footer;
+  }
+
+  /*-----------------------------------Contact us Divice Version ---------------------------------*/
+  #section_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-left: 5%;
+  }
+  #forme_23 {
+    width: 100%;
+  }
+  #Fug_papier {
+    display: inline;
+    justify-items: flex-end;
+    align-self: center;
+    width: 60%;
+    margin-left: 4px;
+    z-index: -1;
+  }
+  #Fug_papier img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    transform: rotate(-45deg);
+  }
+}
+
+/* style junior __________________________________________________________________________________ */
+* {
+  box-sizing: border-box;
+}
+
+#body_ubung_j2,
+html {
+  height: 100%;
+}
+
+/* Remove the standard margin of the page to 0 ??? */
+#body_ubung_j2 {
+  margin: 0;
+  background-color: #f2e3ede6;
+  display: grid;
+  grid:
+    "vollbild"
+    "body_ubunghomepage_j";
+  grid-template-columns: 100%;
+  grid-template-rows: 0% 100%;
+  /*grid-gap: 10px;*/
+}
+#sticky_navbar_a {
+  padding-left: 0;
+  margin-left: -10px;
+  font-size: 15px;
+  color: black;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav";
+  background: #c1b7c1;
+  z-index: 3;
+}
+
+#titel_animated_keyf_j {
+  animation-name: titel_animated_keyf_move_j;
+  animation-duration: 3s;
+  animation-iteration-count: 5;
+}
+
+
+@keyframes titel_animated_keyf_move_j {
+  0% {
+    font-size: 20px;
+  }
+  25% {
+    font-size: 30px;
+  }
+  50% {
+    font-size: 40px;
+  }
+  75% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+
+/* #body_ubung_j2:has(#voll_image:hover) {
+    grid-template-rows: 0% 100%;
+  } */
+#voll_image {
+  display: none;
+
+  grid-area: vollbild;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: url("umkehrfunktion/background_lesson.png");
+}
+#body_ubunghomepage_j {
+  grid-area: body_ubunghomepage_j;
+}
+.body_ubung_j {
+  margin: 0;
+  background-color: #f2e3ede6;
+  display: grid;
+  grid:
+    "header header header header header header header"
+    "left left main main main right right"
+    "footer footer footer footer footer footer footer";
+  grid-template-columns:
+    minmax(0, 0fr) minmax(0, 0fr)
+    minmax(0, 1fr) minmax(1, 0fr) minmax(1, 0fr)
+    minmax(0, 0fr) minmax(0, 0fr);
+  /*grid-gap: 10px;*/
+}
+
+.body_profil_page_j {
+  margin: 0;
+  padding-right: 0px;
+}
+
+.body_ubung_j a {
+  text-decoration: none;
+}
+
+/*.body_ubung_j a:hover {
+    text-decoration: underline;
+    font-size: larger;
+  }*/
+.contain_tooltip_j {
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  display: inline-block;
+}
+
+.body_ubung_j h2 {
+  margin-top: 40px;
+}
+
+/* video css */
+.body_ubung_j video {
+  width: 100%;
+  height: 200px;
+}
+
+/* images for illustrations */
+.illustration_bild_j img {
+  width: 100%;
+  height: 200px;
+}
+
+/* other lections in the way */
+.lection_space_j img {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  box-shadow: 3px 2px 10px 0 #202020;
+  margin-top: 5px;
+}
+.lection_space_j cite {
+  font-size: larger;
+}
+#sticky_more_lections_j {
+  position: sticky;
+  overflow: hidden;
+  top: 10px;
+}
+
+/* last children in the glossar */
+.under_group_j {
+  list-style-type: lower-alpha;
+}
+.under_group_j > li > a:hover {
+  font-size: 17px;
+  color: #02b90b;
+}
+
+.under_group_2_j {
+  list-style-type: decimal;
+}
+.under_group_2_j > li > a:hover {
+  font-size: 17px;
+  color: #02b90b;
+}
+
+.body_ubung_j code > input {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: "Cookie", serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* voll image start */
+/* #voll_image_container {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  } */
+
+/* Start style for the drag and drop excice */
+
+/* this parent div is flex has 2 elements display in colum
+    for pc and row for mobile */
+.drag_drop_j {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+}
+
+/* the first child  */
+.dr_dr_1 {
+  flex: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+  padding-left: 10px;
+}
+.dr_dr_1_left {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dr_dr_1_right {
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+/* his top child */
+.dr_dr_1_right_top {
+  flex: 49%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.last_case {
+  flex: 33.33%;
+  height: 40px;
+  border: 1px solid black;
+  margin: 0 2px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* his middle child */
+.dr_dr_1_right_middle {
+  flex: 2%;
+  border: 1px solid black;
+  background-color: #000;
+  margin-top: 2px;
+}
+
+/* his bottom child */
+.dr_dr_1_right_bottom {
+  flex: 49%;
+  display: flex;
+  flex-direction: row;
+}
+.dr_dr_1_right_bottom > div {
+  flex: 33.33%;
+}
+.last_child_2 {
+  border: 1px solid black;
+  height: 40px;
+  margin: 2px 6px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* the second child */
+.dr_dr_2 {
+  margin-top: 10px;
+  flex: 50%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  flex-wrap: wrap;
+}
+.dr_dr_2 > div {
+  padding: 3px;
+  flex: 25%;
+  border-style: none;
+  border: 1px solid black;
+  margin: 0;
+  text-align: center;
+}
+
+/* End style for the drag and drop excice */
+
+/* start style formular */
+.error_f_j {
+  color: red;
+  display: inline-block;
+  font-family: "Courgette", serif;
+  font-size: 17px;
+}
+.titel_q_j {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.animated_b_container_j {
+  text-align: center;
+}
+.animated_bottom_j {
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.animated_bottom_j:hover {
+  background-color: #40db40;
+  font-size: larger;
+}
+
+/* ------------------- custom radio formular */
+.formular_ubung .container_j {
+  display: inline-block;
+  padding-right: 5px;
+  /* padding-top: 5px; */
+  /* padding-bottom: 5px; */
+}
+
+/* change css parent when hober child */
+/* div:has(button:hover) {
+    background-color: cyan;
+  } */
+
+.formular_ubung .container_j:has(input:checked) {
+  border: 2px solid #b397b3;
+  border-radius: 10px;
+  background-color: #c1b7c1;
+  font-size: larger;
+}
+
+.formular_ubung .container_j:hover {
+  font-size: larger;
+  border: 1px solid #b397b3;
+  border-radius: 10px;
+  background-color: #c1b7c1;
+}
+/* The container */
+.container_j {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Hide the browser's default radio button */
+.container_j input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top: -3px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 30px;
+  width: 100%;
+}
+
+/* Create a custom radio button */
+.checkmark_radio {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 3px solid #b397b3;
+}
+
+/* On mouse-over, add a grey background color */
+.container_j:hover input ~ .checkmark_radio {
+  background-color: #ccc;
+  transition: background-color 4s, transform 5s;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_j input:checked ~ .checkmark_radio {
+  background-color: #b397b3;
+  transform: rotate(180deg);
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_j input:checked ~ .checkmark_radio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_j .checkmark_radio:after {
+  /* _______ */
+  content: "";
+  position: absolute;
+  display: none;
+  /* _______ */
+  top: 2.8px;
+  left: 2.5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 20%;
+  background: white;
+}
+
+/* container checkbox */
+/* Create a custom radio button */
+.checkmark_checkbox {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  /* border-radius: 50%; */
+  border: 3px solid #b397b3;
+}
+
+/* On mouse-over, add a grey background color */
+.container_j:hover input ~ .checkmark_checkbox {
+  background-color: #ccc;
+  transition: background-color 4s, transform 5s;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_j input:checked ~ .checkmark_checkbox {
+  background-color: #b397b3;
+  transform: rotate(360deg);
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_j input:checked ~ .checkmark_checkbox:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_j .checkmark_checkbox:after {
+  /* _______ */
+  content: "✓";
+  position: absolute;
+  display: none;
+  font-weight: bold;
+  /* _______ */
+  top: -7px;
+  left: 0px;
+  /* width: 7px;
+    height: 7px; */
+  border-radius: 20%;
+  color: white;
+}
+
+/* input type text css */
+.formular_ubung input[type="text"] {
+  outline: none;
+  border: 3px solid rgb(179, 151, 179);
+  background-color: #ccc;
+  width: 24px;
+}
+/* ------------------ end custom radio formular */
+
+/* input[type=radio]:checked {
+      background-color: #b397b3;
+      border-color: #b397b3;
+      color: #b397b3;
+    } */
+/* #q1_ja_j{
+      border-radius: 50%;
+      background: #b397b3;
+    } */
+/* .radio_deco_j{
+      
+      border-color: #b397b3;
+      border-radius: 50%;
+      color: #b397b3;
+      background: #b397b3;
+    } */
+/* ende style formular */
+
+/* ............... Header with Step overview ................... */
+#header_step_overview {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(179, 151, 179)
+  );
+  height: 100%;
+}
+.contain_tooltip_j .tooltip {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 10%;
+}
+.contain_tooltip_j:hover .tooltip {
+  visibility: visible;
+}
+
+/* ............... Ende Header with Step overview ................... */
+
+/* ............... Main content of the page ................... */
+/*.main_page_j{
+      display: flex;
+      flex-direction: column;
+      background-color: #f2e3ede6;
+    }*/
+
+.body_ubung_j main {
+  grid-area: main;
+}
+
+.body_ubung_j aside {
+  grid-area: right;
+  display: none;
+}
+
+.body_ubung_j .left {
+  grid-area: left;
+  display: none;
+}
+
+/* aside image */
+.body_ubung_j .aside_img_j {
+  width: 100%;
+  height: 200px;
+  box-shadow: 3px 2px 10px 0 #202020;
+  margin: 10px 0;
+}
+
+/* main content left children */
+.current_lektion_j {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lektion_titel_j {
+  text-align: center;
+  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Style the tab */
+/* Sticky Navbar */
+#sticky1 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 50px;
+  width: 100%;
+  z-index: 2; /* the sticky tab is over all the content */
+}
+
+/* Style the buttons inside the tab */
+#sticky1 button {
+  flex: 25%;
+  border: none;
+  /* outline: none;
+    cursor: pointer; */
+  padding: 14px 16px;
+  /* transition: 0.3s; */
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#sticky1 button:hover {
+  background-color: #ddd;
+  font-size: larger;
+}
+
+/* Style the tab content */
+.body_ubung_j main {
+  padding: 6px 12px;
+  border: none;
+}
+
+/* formular teacher update */
+
+#update_teacher_j {
+  display: none;
+
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(255, 0, 0, 0),
+    rgb(112, 112, 255)
+  );
+}
+
+.formular_teacher_update h3,
+h4 {
+  width: 100%;
+}
+.formular_teacher_update {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  padding: 10px;
+  justify-content: center;
+}
+.formular_teacher_update > div {
+  width: 280px;
+  margin-left: 10px;
+}
+
+.formular_teacher_update textarea {
+  width: 100%;
+  padding: 10px;
+  /* margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none; */
+  min-height: 120px;
+}
+.grid_teacher {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.grid_teacher label {
+  grid-column: 1;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.grid_teacher input {
+  grid-column: 2;
+}
+
+.formular_teacher_update label {
+  border: 3px solid rgb(112, 112, 255);
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(255, 0, 0, 0),
+    rgb(112, 112, 255)
+  );
+  margin: 5px 0px;
+  text-align: center;
+}
+.radio_teacher_j label {
+  border-radius: 10px;
+}
+.formular_teacher_update label:hover {
+  background-color: rgb(112, 112, 255);
+  /* font-size: larger;
+    width: 40%; */
+}
+.formular_teacher_update input[type="text"],
+.formular_teacher_update input[type="tel"],
+.formular_teacher_update input[type="email"],
+.formular_teacher_update input[type="url"] {
+  background-color: #abf1fa;
+  margin: 5px 0px;
+  border-radius: 0px 10px 10px 0px;
+  border: 3px solid rgb(112, 112, 255);
+  outline: none; /*An outline is a 
+    line drawn outside the element's border.*/
+}
+
+.formular_teacher_update input:focus {
+  border: 2px solid rgb(112, 112, 255);
+  background-color: #be14dc;
+  color: white;
+  font-size: larger;
+  /* font-family: "Kurale", serif; */
+}
+
+.formular_teacher_update textarea {
+  background-color: #85f1ff;
+  border: 3px solid rgb(112, 112, 255);
+  outline: none;
+}
+
+.formular_teacher_update textarea:focus {
+  border: 2px solid rgb(112, 112, 255);
+}
+
+.formular_teacher_update button {
+  background-color: rgb(112, 112, 255);
+  border: 3px solid white;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.formular_teacher_update input[type="radio"] {
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+#hobby_j_1,
+#hobby_j_2,
+#hobby_j_3,
+#ctr_j_1,
+#ctr_j_2,
+#ctr_j_3,
+#beruf_j_1,
+#beruf_j_2,
+#beruf_j_3 {
+  display: none;
+}
+
+/* Add some top padding to the page 
+  content to prevent sudden quick 
+  movement (as the navigation bar gets a new position
+   at the top of the page (position:fixed and top:0) 
+   padding-top 60px */
+
+/*-------- bloc info standard fo all page ----------- */
+.bloc_info_j {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: #c3ebeb;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  /* padding: 0 5px; */
+}
+
+.bloc_info_j i {
+  flex: 10%;
+  color: #54d9eb;
+  font-size: 30px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+}
+.bloc_info_j div {
+  flex: 90%;
+  margin: 0 5px;
+}
+
+/* ................. Bloc Tipps ................... */
+.bloc_tipp_j {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: #f0c537;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  /* padding: 0 5px; */
+}
+
+.bloc_tipp_j i {
+  flex: 10%;
+  color: #ff7b00;
+  font-size: 30px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+}
+.bloc_tipp_j div {
+  flex: 90%;
+  margin: 0 5px;
+}
+
+/* Bloc question standard */
+.bloc_question_j {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: #f1cbff;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  /* padding: 0 5px; */
+}
+.bloc_question_j i {
+  flex: 10%;
+  color: #f19aff;
+  font-size: 30px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+}
+.bloc_question_j div {
+  flex: 90%;
+  font-size: 20px;
+  font-family: "Lucida Sans", sans-serif;
+  margin: 0 5px;
+}
+.math {
+  font-family: "Kurale", serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.math {
+  font-family: "Kurale", serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+.math2 {
+  font-family: "Cookie", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.math4 {
+  font-family: "Kurale", serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  font-style: italic;
+}
+.math3 {
+  font-family: "Courgette", serif;
+  /* font-weight: bold; */
+}
+.body_ubung_j code {
+  display: inline-block; /*the code is always display on the same line*/
+  font-family: "Cookie", serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #d3ca8c;
+  padding: 2px 5px;
+  border-radius: 20%;
+}
+
+/* border's text in courses pages !!! */
+.border_left_li_j {
+  border-left: 4px solid #da9cda;
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #d7cbd7;
+  border-radius: 0 20px 20px 0;
+}
+.border_left_max_li_j {
+  border-left: 4px solid #ff63ff;
+  padding-left: 10px;
+}
+/* ---------------- Goals of the lection  -------------------------*/
+.bloc_goal_j {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: #66fc66;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  /* padding: 0 5px; */
+}
+
+.loesung_cercle {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: silver;
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  /* padding: 0 5px; */
+}
+
+.richtige_response {
+  color: rgb(16, 194, 16);
+}
+
+.false_response {
+  color: rgb(183, 15, 15);
+}
+
+.bloc_goal_j i {
+  flex: 10%;
+  color: #40db40;
+  font-size: 30px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+}
+.bloc_goal_j div {
+  flex: 90%;
+  margin: 0 5px;
+}
+
+/* button move */
+.button_move_j {
+  background-color: #b397b3;
+  border-radius: 20px;
+  color: #000000ee;
+  font-size: 35px;
+  padding: 10px 10px;
+  animation-name: button_move_keyf_j;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+}
+.button_move_j:hover {
+  background-color: rgb(145, 112, 212);
+}
+@keyframes button_move_keyf_j {
+  0% {
+    background-color: #66fc66;
+    font-size: 25px;
+  }
+  25% {
+    background-color: #f0c537;
+    font-size: 30px;
+  }
+  50% {
+    background-color: #c3ebeb;
+    font-size: 35px;
+  }
+  75% {
+    background-color: #f0c537;
+    font-size: 30px;
+  }
+  100% {
+    background-color: #66fc66;
+    font-size: 25px;
+  }
+}
+
+/* navbar button _____________________________*/
+#btn_nav_left_j {
+  position: fixed;
+  z-index: 3;
+  top: 160px;
+  left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgb(112, 112, 255);
+  color: white;
+  border: 2px solid white;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  left: 0;
+  background-image: linear-gradient(
+    to top,
+    rgb(180, 222, 253),
+    rgb(112, 112, 255)
+  );
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.5s;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.sidenav a {
+  margin-right: 5px;
+}
+
+.sidenav summary {
+  margin-left: 2px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* end sidebar */
+
+.container_button_j {
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* Beauty line */
+.line_j {
+  /* height: 1px;
+    background-color: #000; */
+  border: 1px solid black;
+}
+
+/* ............... details summury ...............*/
+/* first parent details summary */
+/* font size pf the first parent details summer */
+/* general for all details */
+.body_ubung_j main summary:after {
+  right: 16%; /*position absolute right */
+}
+
+.body_ubung_j details summary {
+  padding: 7px 0;
+  border-bottom: 1px solid black;
+  list-style: none;
+}
+/* start personal */
+.details_first_j > summary {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+/* set symbol for annimation */
+.details_first_j > summary:after {
+  content: ">";
+  position: absolute;
+
+  transition: 200ms linear;
+}
+/* make rotation when click */
+details[open].details_first_j > summary:after {
+  transform: rotate(90deg);
+  /* rotate the content 90° gegen Uhrrichtung
+      also beim Schliessen */
+}
+/* change color of the first detail's summary 
+      when click on it*/
+.body_ubung_j details[open] > summary {
+  color: #b397b3;
+  border-bottom: 1px solid #b397b3;
+}
+.list_tab_j ol {
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: upper-roman;
+}
+
+/* for all list under details */
+.body_ubung_j details ul,
+.body_ubung_j details ol {
+  padding-left: 10%;
+}
+/* -------- Ende First Parent --------------- */
+
+/* --------- Start Second Element -------------*/
+/* details summary */
+/* set symbol for annimation */
+.details_second_j > summary:after {
+  content: "+";
+  position: absolute;
+  transition: 200ms linear;
+}
+/* make rotation when click */
+.body_ubung_j details[open].details_second_j > summary:after {
+  transform: rotate(45deg);
+  /* rotate the content 40° gegen Uhrrichtung
+      also beim Schliessen */
+}
+/* font of the number in the list */
+.list_second_j ol {
+  font-size: 17px;
+  list-style-type: decimal;
+  margin-top: 10px;
+}
+
+.contain_note_ubung_j {
+  text-align: center;
+  margin: 10px 0;
+}
+/* note ubung  */
+#note_ubung_j {
+  text-align: center;
+  font-size: 20px;
+  border: 4px solid #b397b3;
+  border-radius: 20px;
+  padding: 10px;
+  display: none;
+}
+/* --------- Ende Second Element -------------*/
+
+/* --------- Start Third Element -------------*/
+/* set symbol for annimation */
+.details_third_j > summary:after {
+  content: "~";
+  position: absolute;
+  transition: 200ms linear;
+}
+/* make rotation when click */
+.body_ubung_j details[open].details_third_j > summary:after {
+  transform: rotate(45deg);
+  /* rotate the content 40° gegen Uhrrichtung
+      also beim Schliessen */
+}
+/* font of the number in the list */
+.details_third_j > div > ol {
+  font-size: 15px;
+  list-style-type: lower-alpha;
+  margin-top: 10px;
+}
+/* font of the unorderd list in the list */
+.details_third_j > div > ul {
+  font-size: 15px;
+  list-style-type: disc;
+  margin-top: 10px;
+}
+/* --------- Ende Third Element -------------*/
+
+/* End details summary ..............
+   
+  
+    /* ............... Ende main content of the page  ................... */
+
+/* ............... The first footer with Information about the teacher ............*/
+.footer_j_j {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 10px;
+}
+
+.footer_lehrer_infos {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  border-top: 2px solid #b397b3;
+  border-bottom: 2px solid #b397b3;
+}
+
+.footer_first_colonne {
+  background-color: #d7cbd7;
+  flex: 70%;
+  padding-left: 10%;
+  padding-bottom: 5px;
+}
+
+.footer_second_colonne {
+  background-color: #d7cbd7;
+  padding: 0px;
+  flex: 30%;
+  padding-bottom: 5px;
+}
+.footer_titel {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  background-color: #d7cbd7;
+  padding: 0px;
+}
+.footer_titel_style {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 18px;
+  padding-left: 0px;
+}
+
+.author {
+  display: grid;
+  gap: 10px;
+  background-color: #d7cbd7;
+  padding: 0px;
+}
+.author_1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.author_2 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.author_image {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.author_name {
+  font-weight: bold;
+  grid-column: 2;
+  grid-row: 1;
+}
+.author_bescreibung {
+  grid-column: 2;
+  grid-row: 2;
+}
+.footer_link {
+  display: grid;
+  background-color: #d7cbd7;
+  text-align: center;
+}
+.footer_titel_style_second {
+  text-align: center;
+}
+.footer_image_link_first {
+  grid-column: 1;
+  grid-row: 2;
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  display: inline-block;
+}
+.footer_image_link_second {
+  grid-column: 2;
+  grid-row: 2;
+}
+.body_ubung_j figcaption {
+  text-align: center;
+}
+.footer_link > img {
+  border-radius: 50%;
+  border: 3px solid black;
+  margin-bottom: 5px;
+}
+/* We show the tootip on the top of the image */
+.footer_image_link_first .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 3;
+  bottom: 100%;
+  left: 50%;
+}
+
+.footer_image_link_first:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* footer general */
+.footer_general_j {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(179, 151, 179)
+  );
+  font-size: 18px;
+  text-align: center; /* for the addresse below the image. She was't center before*/
+}
+
+.footer_general_j section {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer_general_j img {
+  width: 100%;
+  height: 100px;
+}
+/*end footer general*/
+
+/* ........... Ende Footer with Infos about the teacher ............... */
+
+/* ........... Start Profil Page ............. */
+
+/* .bottom_header {
+  background-color: #d7cbd7;
+  height: 20px;
+} */
+.main_left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-top: 5%;
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  /* display: inline-block; */
+}
+
+.main_right {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main_left img {
+  flex: 40%;
+}
+
+.p_header {
+  margin-left: 10px;
+  flex: 60%;
+  font-size: 18px;
+}
+
+.p_name {
+  font-weight: bold;
+  font-family: "Sansita", sans-serif;
+  /* font-size: 20px; */
+  margin-bottom: 10px;
+}
+.p_contact {
+  font-weight: bold;
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+/* Style for all Theme after the Header  */
+.p_theme {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+.p_theme_1 {
+  flex: 0%;
+  /* margin: auto; */
+  margin-top: 10px;
+  /* font-size: 30px; */
+  color: #2aa572;
+}
+.p_theme_2 {
+  border: 1px solid #000;
+  /* margin: auto; */
+  flex: 100%;
+  /* margin-right: 0; */
+  margin-bottom: 5px;
+}
+
+.body_ubung_j h4 {
+  padding-top: 10px;
+}
+
+.p_attribut {
+  display: grid;
+  padding: 0px;
+  text-align: left;
+}
+.col1_row1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col1_row2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.col1_row3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.col1_row4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+.col2_row1 {
+  margin-top: 7.5px;
+  grid-column: 2;
+  grid-row: 1;
+}
+.col2_row2 {
+  margin-top: 7.5px;
+  grid-column: 2;
+  grid-row: 2;
+}
+.col2_row3 {
+  margin-top: 7.5px;
+  grid-column: 2;
+  grid-row: 3;
+}
+.col2_row4 {
+  margin-top: 8px;
+  grid-column: 2;
+  grid-row: 4;
+}
+
+/* We add a Tooltip for the location of a webmaster */
+
+.p_pos {
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  display: inline-block;
+}
+
+.p_pos .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 3;
+  bottom: 100%;
+  left: 50%;
+}
+
+.name_webmaster {
+  text-align: center;
+  font-size: 25px;
+}
+
+.p_pos:hover .tooltiptext {
+  visibility: visible;
+}
+.container_image_tootip {
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  display: inline-block;
+}
+
+.container_image_tootip .tooltiptext2 {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.container_image_tootip:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+/* ........... Ende Profil Page ............. */
+/* Responsive layout for the Computer devices */
+@media (min-width: 500px) {
+  /* .margin_navbar_j {
+    display: none;
+  } */
+
+  .margin_navbar_j2 {
+    display: none;
+  }
+  #voll_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+  }
+  #body_ubung_j2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100%;
+    /*grid-gap: 10px;*/
+  }
+  @keyframes titel_animated_keyf_move_j {
+    0% {
+      font-size: 40px;
+    }
+    25% {
+      font-size: 50px;
+    }
+    50% {
+      font-size: 60px;
+    }
+    75% {
+      font-size: 50px;
+    }
+    100% {
+      font-size: 40px;
+    }
+  }
+
+  /* Ende Responsive header for step overview */
+
+  /* responsive details icons !!!*/
+  .body_ubung_j main summary:after {
+    right: 45%; /*position absolute right */
+  }
+
+  .body_ubung_j {
+    grid-template-columns:
+      minmax(0, 0fr) minmax(0, 0fr)
+      minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)
+      minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .body_ubung_j aside {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  #sticky1 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 50px;
+    width: 100%;
+    z-index: 2; /* the sticky tab is over all the content */
+  }
+
+  .to_the_top {
+    position: sticky;
+    top: 60px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: #b397b3;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    z-index: 2;
+    margin-top: 10px;
+  }
+  .to_the_top:hover {
+    background-color: rgb(145, 112, 212);
+    text-decoration: underline;
+  }
+
+  /* sticky aside right */
+  #sticky_aside_right_j {
+    position: sticky;
+    top: 20px;
+    overflow: hidden;
+  }
+
+  .nachhilfekurs_j {
+    display: none;
+  }
+  .wirsuchendich_j {
+    display: none;
+  }
+
+  /* Responsive main content */
+  /*.main_page_j{
+        flex-direction: row;
+      }*/
+  /* Ende Responsive main content */
+
+  /* for the profil page. Don't display some elements
+    because they will change their position */
+  .monentan_level1_j {
+    display: none;
+  }
+  .monentan_level3_j {
+    display: none;
+  }
+
+  /* Responsive profile page for  */
+}
+/* remove content ??? */
+@media (min-width: 705px) {
+  .footer_general_j {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* Responsive footer for Infos about teachers for Computer */
+  .footer_lehrer_infos {
+    flex-direction: row;
+    font-size: 16px;
+  }
+
+  .author {
+    padding: 10px;
+  }
+  .footer_titel_style {
+    padding-left: 8px;
+  }
+  .footer_titel {
+    padding: 10px;
+  }
+  .footer_second_colonne {
+    padding: 10px;
+  }
+
+  #wer_sind_wir{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+  #wer_sind_wir > div {
+    width: 100%;
+    display:inline-block;
+    flex-direction: row;
+    padding-top:7px;
+    background-color: #B0C4DE;
+  }
+
+  #wer_sind_wir img{
+    align-items: flex-start;
+    height: 200px;
+    width: 100%;
+  }
+
+  #wer_sind_wir p{
+    align-items: center;
+  }
+
+  #Kurs_section{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: baseline;
+  }
+
+  #Oberstufe_{
+    margin-left: 5%;
+    width: 100%;
+  }
+  
+  #Mittelstufe_{
+    margin-right: 5%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  /* disable nav left */
+  #container_btn_nav_left_j {
+    display: none;
+  }
+  .sidenav {
+    display: none;
+  }
+  /* bigger image */
+  .lection_space_j img {
+    height: 250px;
+  }
+
+  .body_ubung_j .aside_img_j {
+    height: 300px;
+  }
+  .body_ubung_j video {
+    height: 400px;
+  }
+  .illustration_bild_j img {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Responsive header for step overview */
+  #header_step_overview {
+    font-size: 25px;
+  }
+  .lektion_titel_j {
+    font-size: 30px;
+  }
+
+  .body_ubung_j {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  /* responsive details icons !!!*/
+  .left summary:after {
+    right: 73%; /*position absolute right */
+  }
+  .body_ubung_j main summary:after {
+    right: 30%;
+  }
+  .body_ubung_j .left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+  .inhaltverzeichnis_j {
+    display: none;
+  }
+  .monentan_level2_j {
+    display: none;
+  }
+  .monentan_level3_j {
+    display: block;
+  }
+}

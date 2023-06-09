@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="438.455" height="535.073" viewBox="0 0 438.455 535.073">
+  <g id="Gruppe_1" data-name="Gruppe 1" transform="translate(-544 -483)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(544 483)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="169" cy="169" r="169" stroke="none"/>
+      <circle cx="169" cy="169" r="168.5" fill="none"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(562 500)" fill="rgba(245,126,68,0.9)" stroke="#707070" stroke-width="1">
+      <circle cx="151.5" cy="151.5" r="151.5" stroke="none"/>
+      <circle cx="151.5" cy="151.5" r="151" fill="none"/>
+    </g>
+    <line id="Linie_1" data-name="Linie 1" x2="303" transform="translate(563 651.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Linie_2" data-name="Linie 2" x2="1" y2="299" transform="translate(713.5 501.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Linie_3" data-name="Linie 3" x2="221" y2="207" transform="translate(603.5 547.5)" fill="none" stroke="#f5f1f1" stroke-width="1"/>
+    <line id="Linie_4" data-name="Linie 4" y1="210" x2="221" transform="translate(603.5 547.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <g id="Pfad_1" data-name="Pfad 1" transform="matrix(0.914, -0.407, 0.407, 0.914, 663.706, 669.861)" fill="#fff">
+      <path d="M 52.97171401977539 173.6283874511719 L 14.93453311920166 168.3990631103516 L -2.10901951789856 163.2289886474609 L -15.8942699432373 157.0913848876953 L 53.48839569091797 1.255354046821594 L 119.9392166137695 158.2489471435547 C 117.1651229858398 159.3446350097656 102.6023788452148 164.97119140625 87.52653503417969 168.4494934082031 C 71.29439544677734 172.194580078125 54.04965591430664 173.5465698242188 52.97171401977539 173.6283874511719 Z" stroke="none"/>
+      <path d="M 53.476806640625 2.51068115234375 L -15.23415374755859 156.8379821777344 L -1.934036254882812 162.7595977783203 L 15.04172515869141 167.9091033935547 L 52.98683166503906 173.1257781982422 C 54.46843338012695 173.0117797851562 71.43353271484375 171.6493225097656 87.41411590576172 167.9622650146484 C 101.7367095947266 164.6577758789062 115.5999984741211 159.4079132080078 119.2786712646484 157.9711608886719 L 53.476806640625 2.51068115234375 M 53.50000381469727 0 L 120.5987548828125 158.5244293212891 C 120.5987548828125 158.5244293212891 104.5496215820312 165.0350646972656 87.63893890380859 168.9366760253906 C 70.728271484375 172.8383178710938 52.95609664916992 174.1309509277344 52.95609664916992 174.1309509277344 L 14.82723236083984 168.8890228271484 L -2.283950805664062 163.6984252929688 L -16.55442810058594 157.3447875976562 L 53.50000381469727 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Pfad_2" data-name="Pfad 2" transform="translate(833.063 1005.028) rotate(-128)" fill="#f68a56">
+      <path d="M 52.97171401977539 173.6283874511719 L 14.93453311920166 168.3990631103516 L -2.10901951789856 163.2289886474609 L -15.8942699432373 157.0913848876953 L 53.48839569091797 1.255354046821594 L 119.9392166137695 158.2489471435547 C 117.1651229858398 159.3446350097656 102.6023788452148 164.97119140625 87.52653503417969 168.4494934082031 C 71.29439544677734 172.194580078125 54.04965591430664 173.5465698242188 52.97171401977539 173.6283874511719 Z" stroke="none"/>
+      <path d="M 53.476806640625 2.51068115234375 L -15.23415374755859 156.8379821777344 L -1.934036254882812 162.7595977783203 L 15.04172515869141 167.9091033935547 L 52.98683166503906 173.1257781982422 C 54.46843338012695 173.0117797851562 71.43353271484375 171.6493225097656 87.41411590576172 167.9622650146484 C 101.7367095947266 164.6577758789062 115.5999984741211 159.4079132080078 119.2786712646484 157.9711608886719 L 53.476806640625 2.51068115234375 M 53.50000381469727 0 L 120.5987548828125 158.5244293212891 C 120.5987548828125 158.5244293212891 104.5496215820312 165.0350646972656 87.63893890380859 168.9366760253906 C 70.728271484375 172.8383178710938 52.95609664916992 174.1309509277344 52.95609664916992 174.1309509277344 L 14.82723236083984 168.8890228271484 L -2.283950805664062 163.6984252929688 L -16.55442810058594 157.3447875976562 L 53.50000381469727 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="14" cy="14" r="14" transform="translate(789 692)" fill="#ea383e"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="14" cy="14" r="14" transform="translate(882 857)" fill="#ea383e"/>
+    <circle id="Ellipse_13" data-name="Ellipse 13" cx="14" cy="14" r="14" transform="translate(917 889)" fill="#ea383e"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="14" cy="14" r="14" transform="translate(649 534)" fill="#ea383e"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="14" cy="14" r="14" transform="translate(811 598)" fill="#ea383e"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="14" cy="14" r="14" transform="translate(761 637)" fill="#ea383e"/>
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(719 570)" fill="#ea383e" stroke="#707070" stroke-width="1">
+      <circle cx="14" cy="14" r="14" stroke="none"/>
+      <circle cx="14" cy="14" r="13.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="14" cy="14" r="14" transform="translate(673 738)" fill="#ea383e"/>
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="14" cy="14" r="14" transform="translate(852 903)" fill="#ea383e"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="14" cy="14" r="14" transform="translate(645 607)" fill="#ea383e"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="14" cy="14" r="14" transform="translate(604 667)" fill="#ea383e"/>
+    <path id="Pfad_3" data-name="Pfad 3" d="M0,0,31.18,20.751,54.6,46.7,77.71,84.674l10.805,34.406" transform="translate(893.463 797.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_5" data-name="Linie 5" y1="16" x2="10" transform="translate(883.5 797.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_6" data-name="Linie 6" y1="4.921" x2="17.478" transform="translate(964.5 916.579)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

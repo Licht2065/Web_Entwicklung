@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="513" viewBox="0 0 1170 513">
+  <g id="Gruppe_1" data-name="Gruppe 1" transform="translate(-79 -70)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(112 98)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="151.5" cy="151.5" r="151.5" stroke="none"/>
+      <circle cx="151.5" cy="151.5" r="151" fill="none"/>
+    </g>
+    <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(913 98)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="151.5" cy="151.5" r="151.5" stroke="none"/>
+      <circle cx="151.5" cy="151.5" r="151" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(137 128)" fill="#f2df5b" stroke="#707070" stroke-width="1">
+      <circle cx="122" cy="122" r="122" stroke="none"/>
+      <circle cx="122" cy="122" r="121.5" fill="none"/>
+    </g>
+    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(947 128)" fill="#f2df5b" stroke="#707070" stroke-width="1">
+      <circle cx="122" cy="122" r="122" stroke="none"/>
+      <circle cx="122" cy="122" r="121.5" fill="none"/>
+    </g>
+    <rect id="Rechteck_1" data-name="Rechteck 1" width="325" height="325" transform="translate(264 87)" fill="#fff"/>
+    <rect id="Rechteck_2" data-name="Rechteck 2" width="325" height="325" transform="translate(739 87)" fill="#fff"/>
+    <line id="Linie_1" data-name="Linie 1" x2="360" transform="translate(79 250)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_3" data-name="Linie 3" x1="360" transform="translate(889 250)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_2" data-name="Linie 2" x2="360" transform="translate(264 70) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_4" data-name="Linie 4" x2="360" transform="translate(1064 70) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(160 188)" fill="#f36b6b" stroke="#707070" stroke-width="1">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17.5" fill="none"/>
+    </g>
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(1132 188)" fill="#f36b6b" stroke="#707070" stroke-width="1">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17.5" fill="none"/>
+    </g>
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(213 152)" fill="#f36b6b" stroke="#707070" stroke-width="1">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17.5" fill="none"/>
+    </g>
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(1079 152)" fill="#f36b6b" stroke="#707070" stroke-width="1">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17.5" fill="none"/>
+    </g>
+    <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(169 266)" fill="#f36b6b" stroke="#707070" stroke-width="1">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17.5" fill="none"/>
+    </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(1123 266)" fill="#f36b6b" stroke="#707070" stroke-width="1">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17.5" fill="none"/>
+    </g>
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(223 266)" fill="#f36b6b" stroke="#707070" stroke-width="1">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17.5" fill="none"/>
+    </g>
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(1069 266)" fill="#f36b6b" stroke="#707070" stroke-width="1">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17.5" fill="none"/>
+    </g>
+    <line id="Linie_6" data-name="Linie 6" x2="82" transform="translate(1077 510)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_5" data-name="Linie 5" x2="82" transform="translate(157 510)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="_2" data-name="2" transform="translate(189 571)" fill="#707070" font-size="49" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2</tspan></text>
+    <text id="_1" data-name="1" transform="translate(186 489)" fill="#707070" font-size="53" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1</tspan></text>
+    <text id="_4" data-name="4" transform="translate(1101 558)" fill="#707070" font-size="52" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4</tspan></text>
+    <text id="_2-2" data-name="2" transform="translate(1098 490)" fill="#707070" font-size="47" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2</tspan></text>
+  </g>
+</svg>

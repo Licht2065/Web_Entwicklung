@@ -1,0 +1,1486 @@
+* {
+  box-sizing: border-box;
+}
+
+#body_ubung_j2,
+html {
+  height: 100%;
+}
+
+/* Remove the standard margin of the page to 0 ??? */
+#body_ubung_j2 {
+  font-family: Arial;
+  margin: 0;
+  background-color: #f2e3ede6;
+  display: grid;
+  grid:
+    "vollbild"
+    "body_ubung_j";
+  grid-template-columns: 100%;
+  grid-template-rows: 100% 100%;
+  /*grid-gap: 10px;*/
+}
+
+#titel_animated_keyf_j {
+  animation-name: titel_animated_keyf_move_j;
+  animation-duration: 3s;
+  animation-iteration-count: 5;
+}
+@keyframes titel_animated_keyf_move_j {
+  0% {
+    font-size: 20px;
+  }
+  25% {
+    font-size: 30px;
+  }
+  50% {
+    font-size: 40px;
+  }
+  75% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+
+/* #body_ubung_j2:has(#voll_image:hover) {
+  grid-template-rows: 0% 100%;
+} */
+#voll_image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-area: vollbild;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: url("../Profil/test.jpg");
+}
+
+#body_ubung_j {
+  grid-area: body_ubung_j;
+  font-family: Arial;
+  margin: 0;
+  background-color: #f2e3ede6;
+  display: grid;
+  grid:
+    "header header header header header header header"
+    "left left main main main right right"
+    "footer footer footer footer footer footer footer";
+  grid-template-columns:
+    minmax(0, 0fr) minmax(0, 0fr)
+    minmax(0, 1fr) minmax(1, 0fr) minmax(1, 0fr)
+    minmax(0, 0fr) minmax(0, 0fr);
+  /*grid-gap: 10px;*/
+}
+
+#body_ubung_j a {
+  text-decoration: none;
+}
+
+#body_ubung_j a:hover {
+  text-decoration: underline;
+  font-size: larger;
+}
+.contain_tooltip_j {
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  display: inline-block;
+}
+
+#body_ubung_j h2 {
+  margin-top: 40px;
+}
+
+/* video css */
+#body_ubung_j video {
+  width: 100%;
+  height: 200px;
+}
+
+/* images for illustrations */
+.illustration_bild_j img {
+  width: 100%;
+  height: 200px;
+}
+
+/* other lections in the way */
+.lection_space_j img {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  box-shadow: 3px 2px 10px 0 #202020;
+}
+#sticky_more_lections_j {
+  position: sticky;
+  overflow: hidden;
+  top: 10px;
+}
+
+/* last children in the glossar */
+.under_group_j {
+  list-style-type: lower-alpha;
+}
+.under_group_j > li > a:hover {
+  font-size: 17px;
+  color: #02b90b;
+}
+
+.under_group_2_j {
+  list-style-type: decimal;
+}
+.under_group_2_j > li > a:hover {
+  font-size: 17px;
+  color: #02b90b;
+}
+
+#body_ubung_j code > input {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: "Cookie", serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* voll image start */
+/* #voll_image_container {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+} */
+
+/* Start style for the drag and drop excice */
+
+/* this parent div is flex has 2 elements display in colum
+  for pc and row for mobile */
+.drag_drop_j {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+}
+
+/* the first child  */
+.dr_dr_1 {
+  flex: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+  padding-left: 10px;
+}
+.dr_dr_1_left {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dr_dr_1_right {
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+/* his top child */
+.dr_dr_1_right_top {
+  flex: 49%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.last_case {
+  flex: 33.33%;
+  height: 40px;
+  border: 1px solid black;
+  margin: 0 2px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* his middle child */
+.dr_dr_1_right_middle {
+  flex: 2%;
+  border: 1px solid black;
+  background-color: #000;
+  margin-top: 2px;
+}
+
+/* his bottom child */
+.dr_dr_1_right_bottom {
+  flex: 49%;
+  display: flex;
+  flex-direction: row;
+}
+.dr_dr_1_right_bottom > div {
+  flex: 33.33%;
+}
+.last_child_2 {
+  border: 1px solid black;
+  height: 40px;
+  margin: 2px 6px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* the second child */
+.dr_dr_2 {
+  margin-top: 10px;
+  flex: 50%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  flex-wrap: wrap;
+}
+.dr_dr_2 > div {
+  padding: 3px;
+  flex: 25%;
+  border-style: none;
+  border: 1px solid black;
+  margin: 0;
+  text-align: center;
+}
+
+/* End style for the drag and drop excice */
+
+/* start style formular */
+.error_f_j {
+  color: red;
+  display: inline-block;
+  font-family: "Courgette", serif;
+  font-size: 17px;
+}
+.titel_q_j {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.animated_b_container_j {
+  text-align: center;
+}
+.animated_bottom_j {
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.animated_bottom_j:hover {
+  background-color: #40db40;
+  font-size: larger;
+}
+
+/* ------------------- custom radio formular */
+.formular_ubung .container_j {
+  display: inline-block;
+  padding-right: 5px;
+  /* padding-top: 5px; */
+  /* padding-bottom: 5px; */
+}
+
+/* change css parent when hober child */
+/* div:has(button:hover) {
+  background-color: cyan;
+} */
+
+.formular_ubung .container_j:has(input:checked) {
+  border: 2px solid #b397b3;
+  border-radius: 10px;
+  background-color: #c1b7c1;
+  font-size: larger;
+}
+
+.formular_ubung .container_j:hover {
+  font-size: larger;
+  border: 1px solid #b397b3;
+  border-radius: 10px;
+  background-color: #c1b7c1;
+}
+/* The container */
+.container_j {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Hide the browser's default radio button */
+.container_j input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top: -3px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 30px;
+  width: 100%;
+}
+
+/* Create a custom radio button */
+.checkmark_radio {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 3px solid #b397b3;
+}
+
+/* On mouse-over, add a grey background color */
+.container_j:hover input ~ .checkmark_radio {
+  background-color: #ccc;
+  transition: background-color 4s, transform 5s;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_j input:checked ~ .checkmark_radio {
+  background-color: #b397b3;
+  transform: rotate(180deg);
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_j input:checked ~ .checkmark_radio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_j .checkmark_radio:after {
+  /* _______ */
+  content: "";
+  position: absolute;
+  display: none;
+  /* _______ */
+  top: 2.8px;
+  left: 2.5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 20%;
+  background: white;
+}
+
+/* container checkbox */
+/* Create a custom radio button */
+.checkmark_checkbox {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  /* border-radius: 50%; */
+  border: 3px solid #b397b3;
+}
+
+/* On mouse-over, add a grey background color */
+.container_j:hover input ~ .checkmark_checkbox {
+  background-color: #ccc;
+  transition: background-color 4s, transform 5s;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_j input:checked ~ .checkmark_checkbox {
+  background-color: #b397b3;
+  transform: rotate(360deg);
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_j input:checked ~ .checkmark_checkbox:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_j .checkmark_checkbox:after {
+  /* _______ */
+  content: "✓";
+  position: absolute;
+  display: none;
+  font-weight: bold;
+  /* _______ */
+  top: -7px;
+  left: 0px;
+  /* width: 7px;
+  height: 7px; */
+  border-radius: 20%;
+  color: white;
+}
+
+/* input type text css */
+.formular_ubung input[type="text"] {
+  outline: none;
+  border: 3px solid #b397b3;
+  background-color: #ccc;
+}
+/* ------------------ end custom radio formular */
+
+/* input[type=radio]:checked {
+    background-color: #b397b3;
+    border-color: #b397b3;
+    color: #b397b3;
+  } */
+/* #q1_ja_j{
+    border-radius: 50%;
+    background: #b397b3;
+  } */
+/* .radio_deco_j{
+    
+    border-color: #b397b3;
+    border-radius: 50%;
+    color: #b397b3;
+    background: #b397b3;
+  } */
+/* ende style formular */
+
+/* ............... Header with Step overview ................... */
+#header_step_overview {
+  grid-area: header;
+  padding: 0 10px;
+  background-image: url("../Profil/test.jpg");
+  height: 100%;
+}
+.contain_tooltip_j .tooltip {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+}
+.contain_tooltip_j:hover .tooltip {
+  visibility: visible;
+}
+
+/* ............... Ende Header with Step overview ................... */
+
+/* ............... Main content of the page ................... */
+/*.main_page_j{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2e3ede6;
+  }*/
+
+#body_ubung_j main {
+  grid-area: main;
+}
+
+#body_ubung_j aside {
+  grid-area: right;
+  display: none;
+}
+
+#body_ubung_j .left {
+  grid-area: left;
+  display: none;
+}
+
+/* aside image */
+#body_ubung_j .aside_img_j {
+  width: 100%;
+  height: 200px;
+  box-shadow: 3px 4px 10px 0 #202020;
+}
+
+/* main content left children */
+.current_lektion_j {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lektion_titel_j {
+  text-align: center;
+  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Style the tab */
+/* Sticky Navbar */
+#sticky1 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2; /* the sticky tab is over all the content */
+}
+
+/* Style the buttons inside the tab */
+#sticky1 button {
+  flex: 25%;
+  border: none;
+  /* outline: none;
+  cursor: pointer; */
+  padding: 14px 16px;
+  /* transition: 0.3s; */
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#sticky1 a button:hover {
+  background-color: #ddd;
+}
+
+/* Style the tab content */
+#body_ubung_j main {
+  padding: 6px 12px;
+  border: none;
+}
+
+/* formular teacher update */
+
+#update_teacher_j {
+  display: none;
+
+  background-color: #85f1ff;
+}
+
+.formular_teacher_update h3,
+h4 {
+  width: 100%;
+}
+.formular_teacher_update {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  padding: 10px;
+  justify-content: center;
+}
+.formular_teacher_update > div {
+  width: 280px;
+  margin-left: 10px;
+}
+
+.formular_teacher_update textarea {
+  width: 100%;
+  padding: 10px;
+  /* margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none; */
+  min-height: 120px;
+}
+.grid_teacher {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.grid_teacher label {
+  grid-column: 1;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.grid_teacher input {
+  grid-column: 2;
+}
+
+.formular_teacher_update label {
+  border: 3px solid white;
+  background-color: #54d9eb;
+  margin: 5px 0px;
+  text-align: center;
+}
+.radio_teacher_j label {
+  border-radius: 10px;
+}
+.formular_teacher_update label:hover {
+  background-color: blue;
+  /* font-size: larger;
+  width: 40%; */
+}
+.formular_teacher_update input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="url"] {
+  background-color: #85f1ff;
+  margin: 5px 0px;
+  border-radius: 0px 10px 10px 0px;
+  border: 3px solid white;
+  outline: none; /*An outline is a 
+  line drawn outside the element's border.*/
+}
+
+.formular_teacher_update input:focus {
+  border: 2px solid blue;
+  background-color: #be14dc;
+  color: white;
+  font-size: larger;
+  /* font-family: "Kurale", serif; */
+}
+
+.formular_teacher_update textarea {
+  background-color: #85f1ff;
+  border: 3px solid white;
+  outline: none;
+}
+
+.formular_teacher_update textarea:focus {
+  border: 2px solid blue;
+}
+
+.formular_teacher_update button {
+  background-color: blue;
+  border: 3px solid white;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.formular_teacher_update input[type="radio"] {
+  border-radius: 10px;
+}
+
+#hobby_j_1,
+#hobby_j_2,
+#hobby_j_3,
+#ctr_j_1,
+#ctr_j_2,
+#ctr_j_3,
+#beruf_j_1,
+#beruf_j_2,
+#beruf_j_3 {
+  display: none;
+}
+
+/* Add some top padding to the page 
+content to prevent sudden quick 
+movement (as the navigation bar gets a new position
+ at the top of the page (position:fixed and top:0) 
+ padding-top 60px */
+
+/*-------- bloc info standard fo all page ----------- */
+.bloc_info_j {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20%;
+  background-color: #c3ebeb;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* padding: 0 5px; */
+}
+
+.bloc_info_j i {
+  flex: 10%;
+  color: #54d9eb;
+  font-size: 30px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+}
+.bloc_info_j div {
+  flex: 90%;
+  margin: 0 5px;
+}
+
+/* ................. Bloc Tipps ................... */
+.bloc_tipp_j {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20%;
+  background-color: #f0c537;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* padding: 0 5px; */
+}
+
+.bloc_tipp_j i {
+  flex: 10%;
+  color: #ff7b00;
+  font-size: 30px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+}
+.bloc_tipp_j div {
+  flex: 90%;
+  margin: 0 5px;
+}
+
+/* Bloc question standard */
+.bloc_question_j {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20%;
+  background-color: #f1cbff;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  /* padding: 0 5px; */
+}
+.bloc_question_j i {
+  flex: 10%;
+  color: #f19aff;
+  font-size: 30px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+}
+.bloc_question_j div {
+  flex: 90%;
+  font-size: 20px;
+  font-family: "Lucida Sans", sans-serif;
+  margin: 0 5px;
+}
+.math {
+  font-family: "Kurale", serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.math {
+  font-family: "Kurale", serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+.math2 {
+  font-family: "Cookie", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.math4 {
+  font-family: "Kurale", serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  font-style: italic;
+}
+.math3 {
+  font-family: "Courgette", serif;
+  /* font-weight: bold; */
+}
+#body_ubung_j code {
+  display: inline-block; /*the code is always display on the same line*/
+  font-family: "Cookie", serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #d3ca8c;
+  padding: 2px 5px;
+  border-radius: 20%;
+}
+
+/* border's text in courses pages !!! */
+.border_left_li_j {
+  border-left: 4px solid #da9cda;
+  padding-left: 5px;
+  padding-right: 10px;
+  background-color: #d7cbd7;
+  border-radius: 0 20px 20px 0;
+}
+.border_left_max_li_j {
+  border-left: 4px solid #ff63ff;
+  padding-left: 10px;
+}
+/* ---------------- Goals of the lection  -------------------------*/
+.bloc_goal_j {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20%;
+  background-color: #66fc66;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* padding: 0 5px; */
+}
+
+.bloc_goal_j i {
+  flex: 10%;
+  color: #40db40;
+  font-size: 30px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+}
+.bloc_goal_j div {
+  flex: 90%;
+  margin: 0 5px;
+}
+
+/* button move */
+.button_move_j {
+  background-color: #b397b3;
+  border-radius: 20%;
+  color: #000000ee;
+  font-size: 35px;
+  padding: 10px 10px;
+  animation-name: button_move_keyf_j;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes button_move_keyf_j {
+  0% {
+    background-color: #00ff4c;
+    font-size: 25px;
+  }
+  25% {
+    background-color: #fbff00;
+    font-size: 30px;
+  }
+  50% {
+    background-color: #0099ff;
+    font-size: 35px;
+  }
+  75% {
+    background-color: #fbff00;
+    font-size: 30px;
+  }
+  100% {
+    background-color: #00ff4c;
+    font-size: 25px;
+  }
+}
+
+.container_button_j {
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* Beauty line */
+.line_j {
+  /* height: 1px;
+  background-color: #000; */
+  border: 1px solid black;
+}
+
+/* ............... details summury ...............*/
+/* first parent details summary */
+/* font size pf the first parent details summer */
+/* general for all details */
+#body_ubung_j main summary:after {
+  right: 16%; /*position absolute right */
+}
+
+#body_ubung_j details summary {
+  padding: 7px 0;
+  border-bottom: 1px solid black;
+  list-style: none;
+}
+/* start personal */
+.details_first_j > summary {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+/* set symbol for annimation */
+.details_first_j > summary:after {
+  content: ">";
+  position: absolute;
+
+  transition: 200ms linear;
+}
+/* make rotation when click */
+details[open].details_first_j > summary:after {
+  transform: rotate(90deg);
+  /* rotate the content 90° gegen Uhrrichtung
+    also beim Schliessen */
+}
+/* change color of the first detail's summary 
+    when click on it*/
+#body_ubung_j details[open] > summary {
+  color: #b397b3;
+  border-bottom: 1px solid #b397b3;
+}
+.list_tab_j ol {
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: upper-roman;
+}
+
+/* for all list under details */
+#body_ubung_j details ul,
+#body_ubung_j details ol {
+  padding-left: 10%;
+}
+/* -------- Ende First Parent --------------- */
+
+/* --------- Start Second Element -------------*/
+/* details summary */
+/* set symbol for annimation */
+.details_second_j > summary:after {
+  content: "+";
+  position: absolute;
+  transition: 200ms linear;
+}
+/* make rotation when click */
+#body_ubung_j details[open].details_second_j > summary:after {
+  transform: rotate(45deg);
+  /* rotate the content 40° gegen Uhrrichtung
+    also beim Schliessen */
+}
+/* font of the number in the list */
+.list_second_j ol {
+  font-size: 17px;
+  list-style-type: decimal;
+  margin-top: 10px;
+}
+
+/* note ubung  */
+#note_ubung_j {
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  display: none;
+}
+/* --------- Ende Second Element -------------*/
+
+/* --------- Start Third Element -------------*/
+/* set symbol for annimation */
+.details_third_j > summary:after {
+  content: "~";
+  position: absolute;
+  transition: 200ms linear;
+}
+/* make rotation when click */
+#body_ubung_j details[open].details_third_j > summary:after {
+  transform: rotate(45deg);
+  /* rotate the content 40° gegen Uhrrichtung
+    also beim Schliessen */
+}
+/* font of the number in the list */
+.details_third_j > div > ol {
+  font-size: 15px;
+  list-style-type: lower-alpha;
+  margin-top: 10px;
+}
+/* font of the unorderd list in the list */
+.details_third_j > div > ul {
+  font-size: 15px;
+  list-style-type: disc;
+  margin-top: 10px;
+}
+/* --------- Ende Third Element -------------*/
+
+/* End details summary ..............
+ 
+
+  /* ............... Ende main content of the page  ................... */
+
+/* ............... The first footer with Information about the teacher ............*/
+.footer_j_j {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.footer_lehrer_infos {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.footer_first_colonne {
+  background-color: #d7cbd7;
+  flex: 50%;
+  padding-left: 10%;
+  padding-bottom: 5px;
+}
+
+.footer_second_colonne {
+  background-color: #d7cbd7;
+  padding: 0px;
+  flex: 50%;
+  padding-bottom: 5%;
+}
+.footer_titel {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  background-color: #d7cbd7;
+  padding: 0px;
+}
+.footer_titel_style {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 18px;
+  padding-left: 0px;
+}
+
+.author {
+  display: grid;
+  gap: 10px;
+  background-color: #d7cbd7;
+  padding: 0px;
+}
+.author_1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.author_2 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.author_image {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.author_name {
+  font-weight: bold;
+  grid-column: 2;
+  grid-row: 1;
+}
+.author_bescreibung {
+  grid-column: 2;
+  grid-row: 2;
+}
+.footer_link {
+  display: grid;
+  background-color: #d7cbd7;
+  text-align: center;
+}
+.footer_titel_style_second {
+  text-align: center;
+}
+.footer_image_link_first {
+  grid-column: 1;
+  grid-row: 2;
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  display: inline-block;
+}
+.footer_image_link_second {
+  grid-column: 2;
+  grid-row: 2;
+}
+#body_ubung_j figcaption {
+  text-align: center;
+}
+.footer_link > img {
+  border-radius: 50%;
+  border: 3px solid black;
+  margin-bottom: 5px;
+}
+/* We show the tootip on the top of the image */
+.footer_image_link_first .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+}
+
+.footer_image_link_first:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* footer general */
+.footer_general_j {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #d7cbd7;
+  font-size: 18px;
+  text-align: center; /* for the addresse below the image. She was't center before*/
+}
+
+.footer_general_j h4 {
+  border-bottom: 1px solid black;
+}
+.footer_general_j section {
+  margin: 0px 10px;
+}
+
+.footer_general_j img {
+  width: 100%;
+  height: 100px;
+}
+/*end footer general*/
+
+/* ........... Ende Footer with Infos about the teacher ............... */
+
+/* ........... Start Profil Page ............. */
+
+.header_image {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url("../Profil/test.jpg");
+  padding: 20px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.header_image img {
+  width: 100px;
+  height: 100px;
+  flex: 30%;
+}
+.name_webmaster {
+  flex: 70%;
+}
+
+.bottom_header {
+  background-color: #d7cbd7;
+  height: 20px;
+}
+.main_left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-left: 5%;
+  margin-top: 5%;
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  /* display: inline-block; */
+}
+.main_right {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.main_left img {
+  flex: 45%;
+}
+
+.p_header {
+  margin-left: 10px;
+  flex: 55%;
+}
+
+.p_name {
+  font-weight: bold;
+  font-family: "Sansita", sans-serif;
+  font-size: 15px;
+}
+.p_contact {
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+/* Style for all Theme after the Header  */
+.p_theme {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+.p_theme_1 {
+  flex: 0%;
+  /* margin: auto; */
+  margin-top: 10px;
+  font-size: 30px;
+  color: #2aa572;
+}
+.p_theme_2 {
+  border: 1px solid #000;
+  /* margin: auto; */
+  flex: 100%;
+  margin-right: 5%;
+}
+
+#body_ubung_j h4 {
+  margin-bottom: 0;
+}
+
+.p_attribut {
+  display: grid;
+  padding: 0px;
+  text-align: left;
+}
+.col1_row1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col1_row2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.col1_row3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.col1_row4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+.col2_row1 {
+  margin-top: 20px;
+  grid-column: 2;
+  grid-row: 1;
+}
+.col2_row2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.col2_row3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.col2_row4 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+/* We add a Tooltip for the location of a webmaster */
+
+.p_pos {
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  display: inline-block;
+}
+
+.p_pos .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+}
+
+.p_pos:hover .tooltiptext {
+  visibility: visible;
+}
+.container_image_tootip {
+  /* This 2 last line are for the Tooltip*/
+  position: relative;
+  display: inline-block;
+}
+
+.container_image_tootip .tooltiptext2 {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.container_image_tootip:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+/* ........... Ende Profil Page ............. */
+/* Responsive layout for the Computer devices */
+@media (min-width: 770px) {
+  #voll_image {
+    font-size: 50px;
+  }
+  @keyframes titel_animated_keyf_move_j {
+    0% {
+      font-size: 40px;
+    }
+    25% {
+      font-size: 50px;
+    }
+    50% {
+      font-size: 60px;
+    }
+    75% {
+      font-size: 50px;
+    }
+    100% {
+      font-size: 40px;
+    }
+  }
+  /* bigger image */
+  .lection_space_j img {
+    height: 300px;
+  }
+
+  #body_ubung_j .aside_img_j {
+    height: 400px;
+  }
+
+  #body_ubung_j video {
+    height: 300px;
+  }
+  .illustration_bild_j img {
+    width: 100%;
+    height: 400px;
+  }
+
+  /* Responsive header for step overview */
+  #header_step_overview {
+    font-size: 25px;
+  }
+  .lektion_titel_j {
+    font-size: 30px;
+  }
+  /* Ende Responsive header for step overview */
+
+  /* responsive details icons !!!*/
+  #body_ubung_j main summary:after {
+    right: 45%; /*position absolute right */
+  }
+
+  #body_ubung_j {
+    grid-template-columns:
+      minmax(0, 0fr) minmax(0, 0fr)
+      minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)
+      minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  #body_ubung_j aside {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  #sticky1 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2; /* the sticky tab is over all the content */
+  }
+
+  .to_the_top {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: #e7ae85;
+    color: white;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    z-index: 2;
+    font-weight: bold;
+  }
+
+  /* sticky aside right */
+  #sticky_aside_right_j {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .nachhilfekurs_j {
+    display: none;
+  }
+  .wirsuchendich_j {
+    display: none;
+  }
+
+  /* Responsive main content */
+  /*.main_page_j{
+      flex-direction: row;
+    }*/
+  /* Ende Responsive main content */
+
+  /* Responsive footer for Infos about teachers for Computer */
+  .footer_lehrer_infos {
+    flex-direction: row;
+    font-size: 16px;
+    border-top: 2px solid #b397b3;
+    border-bottom: 2px solid #b397b3;
+  }
+  .header_image {
+    flex-direction: row;
+  }
+
+  .author {
+    padding: 10px;
+  }
+  .footer_titel_style {
+    padding-left: 8px;
+  }
+  .footer_titel {
+    padding: 10px;
+  }
+  .footer_second_colonne {
+    padding: 10px;
+  }
+
+  /* for the profil page. Don't display some elements
+  because they will change their position */
+  .monentan_level1_j {
+    display: none;
+  }
+  .monentan_level3_j {
+    display: none;
+  }
+
+  .footer_general_j {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .gravitations_beispiel {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Responsive profile page for  */
+}
+
+@media (min-width: 900px) {
+  #body_ubung_j {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  /* responsive details icons !!!*/
+  .left summary:after {
+    right: 73%; /*position absolute right */
+  }
+  #body_ubung_j main summary:after {
+    right: 30%;
+  }
+  #body_ubung_j .left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+  .inhaltverzeichnis_j {
+    display: none;
+  }
+  .monentan_level2_j {
+    display: none;
+  }
+  .monentan_level3_j {
+    display: block;
+  }
+}

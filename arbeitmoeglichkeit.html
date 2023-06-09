@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type= "image/svg" href="Bilder/Logo/Logo.svg">
+    <meta
+      name="keywords"
+      content="Arbeit, Jobs, Perspective"
+    />
+    <!-- 
+        On-Page SEO - Best Practices: Meta Description 
+        Genau 75 Zeichen für die Meta Description 
+    -->
+    <meta
+      name="description"
+      content="The Way hat im Herz alle Schüler/innen der Mittelstufe oder Oberstufe zu helfen, deswegen brauchen wir Verstärkungen"
+    />
+    
+    <meta property="og:title" content="The Way ">
+    <meta property="og:description" content="Lös deine mathematischen und physischen Probleme und nimmt an 
+    der Verbesserung von deiner Note teil ">
+    <meta property="og:type" content="Website">
+    <meta property="og:site_name" content="The Way">
+    <meta property="og:image" content="Bilder\Logo\Logo_2">
+    <meta property="og:locale" content="de_DE">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="script.js" async></script>
+    <title>The Way- Arbeitsmöglichkeit</title>
+</head>
+<body id="body_main_45">
+    <!--
+        Logo + Nav
+    -->
+
+    <header>
+       
+            <img src="Bilder/Logo/Logo_2.svg" alt="logo von der Website the Way" id="logo">
+       
+        <div class="toogle">
+            <!-- mit Css erstellen-->
+            <span class= "toogle one"></span>
+            <span class="toogle two"></span>
+            <span class="toogle three"></span>
+        </div>
+       
+    </header>    
+    <nav>      
+        <div class="menu">
+                <a href="index.html">
+                    <p id="home_1452">
+                    Home    
+
+                    </p>  
+                </a>
+                <div></div>
+                <a href="contact_us.html">
+                    <p>
+                       Contact
+
+                    </p>  
+                </a>
+                <div>
+
+                </div>
+                <a href="mittelstufe_startSeite.html">
+                    <p>
+                        Stufe
+                    </p>
+                </a> 
+            
+            <div></div>
+        </div>
+    </nav>
+    <section id="arbeitmglich">
+        <h1 id="arbeit_titel">Mitmachen</h1>
+        <img src="Bilder/Bilder_Arbeit/christina-wocintechchat-com-RTJIXQNne68-unsplash.jpg" alt="Dame,die mit einem Cumputer ein Formular ausfühlt">
+        
+        <form action="contract_jobs.php" class="forme_">
+            <h2>
+                Persönnliche Informationen
+            </h2>
+            <input type="text" name="name_input" id="name_input" placeholder="Nachname" title="Name des Bewerbers"  required>
+            <input type="text" name="vorname_input" id="vorname_input" placeholder="Vorname" required title="Vorname des Bewerbers">
+            <input type="date" name="date_input" id="date_input" required  title="Geburtstagsdatum des Bewerbers">
+            <input type="email" name="email" placeholder="munster@email.com" maxlength="100" required title="Die Email des Bewerbers">
+            <input type="text" name="telephone_nummer" placeholder=" 0 xx xx xx xx xx" maxlength="11" minlength="11" required 
+            pattern="(0 ?[0-9]{2} ?[0-9]{2} ?[0-9]{2} ?[0-9]{2} ?[0-9]{2})" title="Die Telefonnummer muss mit null und 10 Zahlen enthalten">
+            <div class="info_per">   
+                <input type="text" name="strasse" placeholder="strasse" required title="Strassenename des Bewerbers">
+                <input type="text" name="hausnummer" placeholder="nr" maxlength="3" required title="hausnummer des Bewerbers">
+
+            </div>  
+            <div class="info_per">
+                <input type="text" name="plz" maxlength="5" minlength="5" placeholder="plz" required title="Plz des Bewerbers" pattern="[0-9]{5}">
+                <input type="text" name="stadt" placeholder="Stadt" required title="Stadtname des Bewerbers">
+            </div>
+            <h2>Bildung</h2>
+            <div class="bildung_Fach">
+                <label for="Höchste_Bildung_liste">Höchste Bildung: </label>
+                <select id="Höchste_Bildung_liste" name= "Höchste_Bildung_liste">
+                    <option value="Abitur">abitur</option>
+                    <option value="Bechalor">bechalor</option>
+                    <option value="Ausbildung">ausbildung</option>
+                    <option value="Etwas Anderes">etwas anderes</option>
+                </select>
+                <input type="text" name ="anderes" id="anderes" placeholder="anderes">
+            </div>
+            <h2>
+                Wahl des Faches
+            </h2>
+            <div class="bildung_Fach">
+                <label for="Fächer_liste">Fächer:</label>
+                <select name="Fächer_liste" id="Fächer_liste">
+                <option value="Mathematik">Mathematik</option>
+                <option value="Physik">Physik</option>
+                <option value="Deutsch">Deutsch</option>
+                <option value="Französisch">Französisch</option>
+            </select>
+            </div>
+            <input type="submit" value="senden">
+        </form>
+        <aside>
+            <div>
+                <h2>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    Heben Sie sich von anderen ab
+                </h2>
+                <p>
+                    Helfen Sie uns, Stellenangebote zu finden, die zu Ihrem Profil passen, indem Sie uns ein wenig mehr über sich erzählen.
+                </p>
+            </div>
+           <div>
+                <h2>
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    Abonnements von Stellenangeboten
+                </h2>
+                <p>
+                    Soyez le premier informé de nos offres d'emploi.
+                </p>
+           </div>
+            <div>
+                <h2>
+                    
+                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                    Fügen Sie Empfehlungen hinzu
+                </h2>
+                <p>
+                    Ajoutez des personnes qui peuvent vous recommander en tant que collègue.
+                </p>
+            </div>
+            
+        </aside>
+    </section>
+    <footer>
+        <div class="footer_general_j">
+            <section>
+              <img src="Bilder/Logo/Logo_2.svg" alt="Logo the The Way" />
+              <p>China Town 16<br />80791 Newyork<br />USA</p>
+            </section>
+            <section>
+              <h4>Contact</h4>
+              <a href="mailto:ampharos@gmail.com">Schreib uns</a><br />
+              <a href="contact_us.html">Feedback senden</a>
+            </section>
+            <section>
+              <h4>Service</h4>
+              <a href="arbeitmoeglichkeit.html">Nachhilfekurs</a><br />
+              <a href="arbeitmoeglichkeit.html">Arbeitmöglichkeiten</a>
+            </section>
+            <section>
+              <h4>About us</h4>
+              <a href="wer_sind_wir.html">Wer sind wir?</a><br />
+              <a href="Profil/lehrer.php?id=3">Esra's profil page</a><br />
+              <a href="Profil/lehrer.php?id=2">Aymar's profil page</a><br />
+              <a href="Profil/lehrer.php?id=1">Junior's profil page</a>
+            </section>
+          </div>
+    </footer>
+</body>
+</html>

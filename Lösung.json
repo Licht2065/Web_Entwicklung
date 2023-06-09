@@ -1,0 +1,22 @@
+{
+    "punkte":{
+        "ubung_1":{
+            "frage 1":"Die Erste Antwort war die Richtige",
+            "frage 2":"Das erste Bild und letzte Bild waren die Antwort",
+            "frage 3":["A(2|2)","A(1|-12)"]  
+        }
+        
+    },
+    "Bruche":{
+        "ubung_1":{
+            "frage 1":["1","3"], 
+            "frage 2":"1",
+            "frage 3":"4"
+        },
+        "ubung_3":{
+            "frage 1":"3"
+        }
+        
+    }
+    
+}

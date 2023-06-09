@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2420" height="2399" viewBox="0 0 2420 2399">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #151414;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: #161313;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Gruppe_2" data-name="Gruppe 2" transform="translate(-4867 1413)">
+    <g id="Rechteck_7" data-name="Rechteck 7" class="cls-1" transform="translate(4867 -1413)">
+      <rect class="cls-5" width="1176" height="1176" rx="190"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="1175" height="1175" rx="189.5"/>
+    </g>
+    <g id="Rechteck_9" data-name="Rechteck 9" class="cls-1" transform="translate(4867 -190)">
+      <rect class="cls-5" width="1176" height="1176" rx="190"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="1175" height="1175" rx="189.5"/>
+    </g>
+    <g id="Rechteck_8" data-name="Rechteck 8" class="cls-2" transform="translate(6111 -1413)">
+      <rect class="cls-5" width="1176" height="1176" rx="190"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="1175" height="1175" rx="189.5"/>
+    </g>
+    <g id="Rechteck_10" data-name="Rechteck 10" class="cls-2" transform="translate(6111 -190)">
+      <rect class="cls-5" width="1176" height="1176" rx="190"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="1175" height="1175" rx="189.5"/>
+    </g>
+    <g id="Rechteck_11" data-name="Rechteck 11" class="cls-3" transform="translate(6223 516)">
+      <rect class="cls-5" width="953" height="122" rx="61"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="952" height="121" rx="60.5"/>
+    </g>
+    <g id="Rechteck_12" data-name="Rechteck 12" class="cls-3" transform="translate(6223 194)">
+      <rect class="cls-5" width="953" height="122" rx="61"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="952" height="121" rx="60.5"/>
+    </g>
+    <g id="Rechteck_14" data-name="Rechteck 14" class="cls-3" transform="translate(5055.861 664.575) rotate(-41)">
+      <rect class="cls-5" width="953" height="122" rx="61"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="952" height="121" rx="60.5"/>
+    </g>
+    <g id="Rechteck_13" data-name="Rechteck 13" class="cls-3" transform="translate(6223 -861)">
+      <rect class="cls-5" width="953" height="122" rx="61"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="952" height="121" rx="60.5"/>
+    </g>
+    <g id="Rechteck_15" data-name="Rechteck 15" class="cls-3" transform="translate(4979 -861)">
+      <rect class="cls-5" width="953" height="122" rx="61"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="952" height="121" rx="60.5"/>
+    </g>
+    <rect id="Rechteck_16" data-name="Rechteck 16" class="cls-4" width="953" height="122" rx="61" transform="translate(5516 -1276.5) rotate(90)"/>
+  </g>
+</svg>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type= "image/svg" href="../Bilder/Logo/Logo.svg">
+
+    <script src="../script.js" async></script>
+    <script src="tableau.js" async></script>
+    <title>The Way- Übung Grundlagen Punkte und Axe</title>
+</head>
+<body>
+    <!--
+        Logo + Nav
+    -->
+    <header>
+        <a href="../index.html">
+            <img src="../Bilder/Logo/Logo_2.svg" alt="logo von der Website the Way" id="logo">
+        </a>
+        <div class="toogle">
+            <!-- mit Css erstellen-->
+            <span class= "toogle one"></span>
+            <span class="toogle two"></span>
+            <span class="toogle three"></span>
+        </div>
+       
+    </header>    
+    <nav>      
+        <ul class="menu">
+            <li>
+                <a href="../index.html">
+                    Home Seite
+                </a>
+            </li>
+            <li>
+                <a href="../login.html">Log in</a>
+            </li>
+            <li class="stufen">
+                <div class="stufen titel">
+                    Stufe
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+            </li>
+        </ul>
+        <ul class= "menu suite">
+            <li>  
+                <a href="../oberstufe_startSeite.html">Oberstufe</a>
+            </li>
+            <li>
+                 <a href="../mittelstufe_startSeite.html">Mittelstufe</a>
+                    
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="navigation">
+            <div class="navigation start">
+                <a href="index_punkte.html"><i class="fa fa-home"></i></a>
+            </div>
+            
+                <a href="einleitung.html">
+                    <div class="navigation intro"></div>
+                </a>
+            
+                <a href="Uebung_Punkte_1.html"><div class="navigation Uebung"></div></a>
+           
+                <a href="Axe_und_Punkte.html"> <div class="navigation Dritte"></div></a>
+            
+                <a href="Uebung_Punkte_2.html"><div class="navigation Uebung"></div></a>
+            
+                <a href="Abstand_zwischen_punkte.html"><div class="navigation Vierte"></div></a>
+            <a href="Ubung_punkte_3.html"><div class="navigation Uebung"></div></a>
+
+            <div class="navigation ende">
+                <a href="ende.html"> <i class="fa fa-trophy" aria-hidden="true"></i></a>
+               
+            </div>
+            </div>
+       <h1>Bewertete Kompetenzen</h1>
+       <p>Benutzen Sie alle gelernte Begriff,um alle Fragen zu beantworten</p>
+       <h1>Frage 1</h1>
+       <p>
+       Wie viele Achsen hat ein zweidimensionales Koordinatensystem 
+       </p>
+       <div>
+        <input type="radio" name="frage_1 Uebung0" id="Frage_0_answer1">
+        <label for="Frage_0_answer1">
+       0
+        </label>
+       </div>
+        <div>
+            <input type="radio" name="frage_1 Uebung0" id="Frage_0_answer2">
+        <label for="Frage_0_answer2">
+           3
+        </label>
+        </div>
+        <div>
+            <input type="radio" name="frage_1 Uebung0" id="Frage_0_answer3">
+        <label for="Frage_0_answer3">
+           2
+        </label>
+        </div>
+        <div>   
+            <input type="radio" name="frage_1 Uebung0" id="Frage_0_answer4">
+        <label for="Frage_0_answer4">
+           4
+        </label>
+        </div>
+        
+        <h1>Frage 2</h1>
+        <p>
+            Positionieren Sie bitte die Punkten A(3|1)
+        </p>   
+        <canvas width=200 height=200></canvas>
+        <p id="result"></p>
+        <div>
+            <input type="checkbox" name="verification" id="verif">
+            <label for="verif">Ich vertraue meine Antwwort</label>
+        </div>
+        <button> <a href="Abstand_zwischen_punkte.html">Abstand und Punkte</a> </button>
+        
+        
+       <article class="Prof">
+        <!--
+            Bild Lehrer
+        -->
+        <h3>Lehrer</h3>
+        <h4>Ays</h4>
+        <p>Dev, lehrer and Mangasfans</p>
+       </article>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>

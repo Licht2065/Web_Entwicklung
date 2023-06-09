@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type= "image/svg" href="../Bilder/Logo/Logo.svg">
+
+    <script src="../script.js" async></script>
+    <title>The Way- Brüchen und Kürzung</title>
+</head>
+<body>
+    <!--
+        Logo + Nav
+    -->
+    <header>
+        <a href="../index.html">
+            <img src="../Bilder/Logo/Logo_2.svg" alt="logo von der Website the Way" id="logo">
+        </a>
+        <div class="toogle">
+            <!-- mit Css erstellen-->
+            <span class= "toogle one"></span>
+            <span class="toogle two"></span>
+            <span class="toogle three"></span>
+        </div>
+    </header>    
+    <nav>      
+        <ul class="menu">
+            <li>
+                <a href="../index.html">
+                    Home Seite
+                </a>
+            </li>
+            <li>
+                <a href="../login.html">Log in</a>
+            </li>
+            <li class="stufen">
+                <div class="stufen titel">
+                    Stufe
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+            </li>
+        </ul>
+        <ul class= "menu suite">
+            <li>  
+                <a href="../oberstufe_startSeite.html">Oberstufe</a>
+            </li>
+            <li>
+                 <a href="../mittelstufe_startSeite.html">Mittelstufe</a>
+                    
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="navigation">
+            <div class="navigation start">
+                <a href="index_Bruche.html">
+                    <i class="fa fa-home"> 
+                </i>
+                </a> 
+            </div>
+            <a href="Bruchen_grundlage.html"><div class="navigation intro"></div></a>
+           <a href="Uebung_2.html"> <div class="navigation Uebung"></div></a>
+           <a href="Kürzen_Bruche.html"> <div class="navigation Dritte"></div></a>
+            <a href="Uebung_1.html"><div class="navigation Uebung"></div></a>
+            <a href="Bruch_operation.html"><div class="navigation Vierte"></div></a>
+            <a href="Uebung_3.html"><div class="navigation Uebung"></div></a>
+            <div class="navigation ende">
+                <a href="ende.html">
+                    <i class="fa fa-trophy" aria-hidden="true">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <article> 
+            <h2> 
+                Was ist die Kürzung
+            </h2>
+            <p>
+                In dem letzten Kapital haben wir die Grundlagen vom mathematischen Konzept Bruch gelernt, und jetzt seid Ihr im stande:
+                <ol>
+                    <li>
+                        Brüche zu definieren
+                    </li>
+                    <li>
+                        Bruchteile zu erkennen
+                    </li>
+                    <li>
+                        ..  Bruchteile zu berechnen.
+                    </li>
+                </ol> 
+                In diesem Kapital werden wir uns mit einem neuen Konzept nämlich das sogenannte &bdquo;Kürzung&ldquo;
+            </p>
+            <h3>
+                Erklärung
+            </h3>
+            <p>
+                Um einen Bruch zu kürzen, muss man Zähler und Nenner (oben und unten) durch die gleiche Zahl teilen.
+                Mit dieser Rechenregel kann man Brüche also vereinfachen, (man hat oben und unten kleinere Zahlen), der Bruch wird dadurch handlicher.
+            </p>
+                
+            <details>
+                <summary>
+                    Beispiel
+                </summary>
+                <h2>Bruchteile bestimmen</h2>
+                <h3>Aufgabe:</h3>
+                <h4>Bruch kürzen</h4>
+                <p>
+                    Bruch: 
+                    <span class="bruche">
+                        <span class="zaehler">5</span><span class="barre"></span><span class="nenner">20</span>
+                    </span>
+                </p>
+                <details>
+                    <summary>
+                        Lösung
+                    </summary>
+                    <p class="bruchen">
+                        <span class="bruche">
+                            <span class="zaehler">5</span><span class="barre"></span><span class="nenner">20</span>
+                        </span>
+                        <span class="op">=</span>  
+                        <span class="bruche">
+                            <span class="zaehler">5:5</span><span class="barre"></span><span class="nenner">20:5</span>
+                        </span>=
+                        <span class="bruche">
+                            <span class="zaehler">1</span><span class="barre"></span><span class="nenner">4</span>
+                        </span>
+                    </p>
+                    <p>
+                        Rechenweg mit <a href="https://de.wikipedia.org/wiki/Primfaktorzerlegung">Primfaktorzerlegung</a> :
+                    </p>
+                    <p class="bruchen">
+                        <span class="bruche">
+                            <span class="zaehler">5</span><span class="barre"></span><span class="nenner">20</span>
+                        </span>
+                         = 
+                        <span class="bruche">
+                            <span class="zaehler">5</span><span class="barre"></span><span class="nenner">2<sup>.</sup>2<sup>.</sup>5</span> 
+                        </span>
+                    </p>
+                   
+                </details>
+            </details>
+            <details>
+                <summary>
+                    Kürzungszahl überlegen
+                </summary>
+                <p>
+                    Die <b>Kürzungszahl</b>  ist die Zahl, bei der man <b>Zähler und Nenner</b>  durch <b>dieselbe Zahl</b>  dividiert.
+                    Bevor du einen Bruch kürzt, überlegst du dir durch welche Zahl Zähler und Nenner teilbar sind.
+                    Im Zähler und im Nenner darf <b>keine Kommazahl (kein Rest)</b> stehen.
+                </p>
+                <p>
+                    Damit du das besser verstehst, kannst du dir das Beispiel anschauen.
+                </p>
+                
+                <p>
+                    <b>Beispiel:</b>
+                    Wir haben den Bruch 
+                    <span class="bruche">
+                        <span class="zaehler">5</span><span class="barre"></span><span class="nenner">10</span>
+                    </span>
+                    und sollen kürzen. <br>
+                    Beispielsweise kannst du den Bruch nicht mit 2 kürzen, da 5 nicht durch 2 teilbar ist und du im Zähler eine Kommazahl erhältst.
+                    Deshalb überlegst du dir eine andere Kürzungszahl.
+                    <p class="bruchen">
+                        <span class="bruche">
+                            <span class="zaehler">5</span><span class="barre"></span><span class="nenner">10</span>
+                        </span>
+                        =  
+                        <span class="bruche">
+                            <span class="zaehler">5:2</span><span class="barre"></span><span class="nenner">10:2</span>
+                        </span>
+                        =
+                        <span class="bruche">
+                            <span class="zaehler">2,5</span><span class="barre"></span><span class="nenner">5</span> 
+                        </span>
+                    </p>
+                     
+                    
+                    Den Bruch kannst du mit 5 kürzen, da 5 und 10 durch 5 teilbar sind. Wenn du im Zähler 5 durch 5 teilst, bekommst du eine 1.
+                    Im Nenner erhältst du eine 2, da 10 durch 5 teilbar ist.
+                    <p class="bruchen">
+                        <span class="bruche">
+                            <span class="zaehler">5</span><span class="barre"></span><span class="nenner">10</span>
+                        </span>
+                        =
+                        <span class="bruche">
+                            <span class="zaehler">5:5</span><span class="barre"></span><span class="nenner">10:5</span>
+                        </span>
+                        =
+                        <span class="bruche">
+                            <span class="zaehler">1</span><span class="barre"></span><span class="nenner">2</span>
+                        </span>
+                    </p>
+                    
+                    Die Kürzungszahl ist somit die 5.
+                    <div>
+                        Eine Zahl, durch die man niemals dividieren (teilen) kann, ist die 0.
+                    </div>
+                </p>
+            </details>
+            <details>
+                <summary>
+                    Brüche vollständig kürzen 
+                </summary>
+                <p>
+                    Das Ziel des Kürzens besteht darin, den Bruch in eine Form zu bringen, dass dieser nicht weiter gekürzt werden kann. Das ist dann der Fall, wenn der Bruch nicht mehr weiter teilbar ist. 
+                    Dann spricht man davon, dass der Bruch vollständig gekürzt ist.
+                    Im vorherigen Abschnitt haben wir bereits gelernt, wie man einen Bruch kürzt, zum <b>Beispiel:</b>
+                    <p class="bruchen">
+                        <span class="bruche">
+                            <span class="zaehler">16</span><span class="barre"></span><span class="nenner">36</span>
+                        </span>
+                         = 
+                        <span class="bruche">
+                            <span class="zaehler">16:2</span><span class="barre"></span><span class="nenner">36:2</span>
+                        </span>
+                        = 
+                        <span class="bruche">
+                            <span class="zaehler">8</span><span class="barre"></span><span class="nenner">18</span>
+                        </span>
+                    </p>
+                    
+                    An dem Bruch 
+                    <span class="bruche">
+                        <span class="zaehler">8</span><span class="barre"></span><span class="nenner">16</span>
+                    </span>
+                     erkennen wir jedoch, dass es sich nochmals kürzen lässt:
+                     <p class="bruchen">
+                        <span class="bruche">
+                            <span class="zaehler">8</span><span class="barre"></span><span class="nenner">16</span>
+                        </span>
+                         =  
+                         <span class="bruche">
+                            <span class="zaehler">8:2</span><span class="barre"></span><span class="nenner">16:2</span>
+                         </span> =
+                         <span class="bruche">
+                            <span class="zaehler">4</span><span class="barre"></span><span class="nenner">9</span>
+                         </span> 
+                     </p>
+                    
+                    Wir stellen fest, dass wir normalerweise gleich mit der <b>Zahl 4 vollständig kürzen</b> können:
+                    <p class="bruchen">
+                        <span class="bruche">
+                            <span class="zaehler">16</span><span class="barre"></span><span class="nenner">36</span>
+                        </span>
+                         = 
+                         <span class="bruche">
+                            <span class="zaehler">16:4</span><span class="barre"></span><span class="nenner">36:4</span>
+                         </span>  =
+                         <span class="bruche">
+                            <span class="zaehler">4</span><span class="barre"></span><span class="nenner">9</span>
+                         </span> 
+                    </p>
+                    
+                    Der <b>Grund für das Kürzen</b> ist, dass die kleineren Zahlen im Zähler und Nenner ein leichteres Rechnen ermöglichen.
+                    Zudem ist der Rechenweg übersichtlicher und strukturierter.
+
+                </p>
+            </details>
+            <details>
+                <summary>
+                    Brüche kürzen und erweitern
+                </summary>
+                <p>
+                    Brüche kürzen heißt Zähler und Nenner durch die gleiche Zahl dividieren.
+                    Beim Erweitern von Brüchen multiplizierst du Zähler und Nenner durch dieselbe Zahl.
+                    <img src="Bilder/erweiterung.svg" alt="zwei halbe Pizzen mit Salami">
+                    Wie beim Kürzen bleibt der vom Bruch dargestellte Wert unverändert.
+                    Erweitern ist das Gegenteil von Kürzen.
+                    <b>Beispiel:</b> Du sollst den Bruch 
+                    <span class="bruche">
+                        <span class="zaehler">2</span><span class="barre"></span><span class="nenner">5</span>
+                    </span> mit der <b>5</b> erweitern.
+                    Du multiplizierst Zähler und Nenner mit der 5. Im Zähler rechnest du 2 × 5 und im Nenner 5 × 5. 
+                    Damit erhältst du den erweiterten Bruch.
+                    <p class="bruchen">
+                        <span class="bruche">
+                            <span class="zaehler">2</span><span class="barre"></span><span class="nenner">5</span>
+                        </span>
+                        =
+                        <span class="bruche">
+                            <span class="zaehler">2 x 5</span><span class="barre"></span><span class="nenner">5 x 5</span>
+                        </span>
+                        =
+                        <span class="bruche">
+                            <span class="zaehler">10</span><span class="barre"></span><span class="nenner">25</span>
+                        </span>
+                    </p>
+                    
+                </p>
+
+            </details>
+            <button><a href="Uebung_1.html">Übung</a></button>
+           <article class="Prof">
+            <!--
+                Bild Lehrer
+            -->
+            <h3>Lehrer</h3>
+            <h4>Ays</h4>
+            <p>Dev, lehrer and Mangasfans</p>
+        </article>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type= "image/svg" href="Bilder/Logo/Logo.svg">
+    <meta
+      name="keywords"
+      content="Sign in , Angebot , Premum"
+    />
+    <!-- 
+        On-Page SEO - Best Practices: Meta Description 
+        Genau 75 Zeichen für die Meta Description 
+    -->
+    <meta
+      name="description"
+      content="Anmeldung auf das Premium Angebot mit einer Reduktion von 50%."
+    />
+  
+    <meta property="og:title" content="The Way ">
+    <meta property="og:description" content="Lös deine mathematischen und physischen Probleme und nimmt an 
+    der Verbesserung von deiner Note teil ">
+    <meta property="og:type" content="Website">
+    <meta property="og:site_name" content="The Way">
+    <meta property="og:image" content="Bilder\Logo\Logo_2">
+    <meta property="og:locale" content="de_DE">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="script.js" async></script>
+    <title>The Way- Sign up</title>
+</head>
+<body id="body_main_45">
+    <!--
+        Logo + Nav
+    -->
+    
+    <header>
+        
+            <img src="Bilder/Logo/Logo_2.svg" alt="logo von der Website the Way" id="logo">
+      
+        <div class="toogle">
+            <!-- mit Css erstellen-->
+            <span class= "toogle one"></span>
+            <span class="toogle two"></span>
+            <span class="toogle three"></span>
+        </div>
+       
+    </header>    
+    <nav>      
+        <div class="menu">
+                <a href="index.html">
+                    <p id="home_1452">
+                    Home    
+
+                    </p>  
+                </a>
+                <div></div>
+                <a href="contact_us.html">
+                    <p>
+                       Contact
+
+                    </p>  
+                </a>
+                <div>
+
+                </div>
+                <a href="mittelstufe_startSeite.html">
+                    <p>
+                        Stufe
+                    </p>
+                </a> 
+            
+            <div></div>
+        </div>
+    </nav>
+    <section class="Log_sign">
+        <img src="Bilder/Logo/Logo.svg" alt="logo von der Website the Way">
+       <h1 class="Log_sign">Sign up</h1>
+        <p class="fehler">
+           Dieses Konto existiert schon
+        </p>
+        <form action="contract_jobs.php" class="forme signin">
+            <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo" required>
+            <p class="fehler pseudo">Diese Pseudo  wurde schon genommen</p>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <p class="fehler email">Falsche Email</p>
+            <input type="password" name="passwort" id="passwort" placeholder="passwort" required>
+            <p class="fehler passwort">Password sollt mindesten 8 Zeichen mit einem großen Buchstabe besonderzeichen Zahl sein</p>
+            <input type="password" name="passwort_wiederholen" id="passwort_wiederholen" placeholder="passwort wiederholen" required>
+            <p class="fehler passwort_wiedeholung">Password und wiederholende Password sind unterschiedlich</p>
+            
+            <div id="selection">
+                <label id="sdqe">Stufe</label>
+                <div>
+                    <input type="radio" name="stufe" id="Oberstufe" value="Oberstufe" checked>
+                    <label for="Oberstufe">Oberstufe</label>
+                </div>
+                <div>
+                    <input type="radio" name="stufe" id="Mittelstufe" value="Mittelstufe">
+                    <label for="Mittelstufe">Mittelstufe</label>
+                </div>
+            </div>
+            
+            <p class="fehler email">Falsche Passwort</p>
+            <div id="erinnern">
+                    <input type="checkbox" name="checkbox_remember_me" id="checkbox_remember_me">
+                    <label for=checkbox_remember_me>Nutzungsbedigungen</label>
+            </div>       
+            <!--<div>
+                <p>
+                   
+                </p>
+                <a href="login.html">Schon ein Konto</a>
+            </div> -->        
+            
+            <button type="submit" id="libre" disabled>Erstellen</button>
+            
+            
+        </form>
+    </section>
+    <footer>
+        <div class="footer_general_j">
+            <section>
+              <img src="Bilder/Logo/Logo_2.svg" alt="Logo the The Way" />
+              <p>China Town 16<br />80791 Newyork<br />USA</p>
+            </section>
+            <section>
+              <h4>Contact</h4>
+              <a href="mailto:ampharos@gmail.com">Schreib uns</a><br />
+              <a href="contact_us.html">Feedback senden</a>
+            </section>
+            <section>
+              <h4>Service</h4>
+              <a href="arbeitmoeglichkeit.html">Nachhilfekurs</a><br />
+              <a href="arbeitmoeglichkeit.html">Arbeitmöglichkeiten</a>
+            </section>
+            <section>
+              <h4>About us</h4>
+              <a href="wer_sind_wir.html">Wer sind wir?</a><br />
+              <a href="Profil/lehrer.php?id=3">Esra's profil page</a><br />
+              <a href="Profil/lehrer.php?id=2">Aymar's profil page</a><br />
+              <a href="Profil/lehrer.php?id=1">Junior's profil page</a>
+            </section>
+          </div>
+     </footer>
+</body>
+</html>
